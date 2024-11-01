@@ -1,23 +1,29 @@
-import React, { useState } from 'react'
-import Container from '../layers/Container'
-// import logo from '../../../public/SoulSpace.png'
-import logo from '/logo.png'
-import { NavLink } from 'react-router-dom'
-import Li from './Li'
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoCloseSharp } from "react-icons/io5";
+import { IoLogoFacebook } from "react-icons/io";
+// import React, { useState } from 'react'
+// import Container from '../layers/Container'
+// // import logo from '../../../public/SoulSpace.png'
+import Logo from '@/public/Logo.png'
+// import { NavLink } from 'react-router-dom'
+// import Li from './Li'
+// import { GiHamburgerMenu } from "react-icons/gi";
+// import { IoCloseSharp } from "react-icons/io5";
 
+import Container from "./Container"
+
+import { AiFillInstagram } from "react-icons/ai";
+import Image from "next/image";
+import Link from "next/link";
 
 
 
 const navbar = () => {
-  let [show, setShow] = useState(false);
-  let handler = () => {
-    setShow(!show);
-  }
+  // let [show, setShow] = useState(false);
+  // let handler = () => {
+  //   setShow(!show);
+  // }
   return (
     <>
-      <nav className='py-8 bg-[#fff] relative'>
+      {/* <nav className='py-8 bg-[#fff] relative'>
         <Container className='flex items-center justify-between'>
           <div className="flex flex-col md:flex-row items-center w-full">
 
@@ -45,6 +51,34 @@ const navbar = () => {
 
           </div>
         </Container>
+      </nav> */}
+      <nav>
+
+        <div className="navtop bg-[var(--color---11)] py-2">
+          <Container className='flex justify-between items-center'>
+            <p className="font-semibold text-xs text-[var(--color---5)]">Mon-Thu: <span className="text-[var(--color---12)]">9:00 AM - 5:30 PM</span></p>
+            <p className="font-semibold text-xs text-center text-[#acacac]">Visit our showroom in 1234 Street Adress City Address, 1234  <span className="text-[var(--color---12)] relative before:w-full before:h-[2px] before:absolute before:bg-[var(--color---12)] before:top-full before:left-0 before:rounded-full">  Contact Us</span></p>
+            <div className="flex gap-x-4 items-center">
+              <p className="font-semibold text-xs text-center text-[var(--color---12)]">Call Us: (00) 1234 5678</p>
+              <div className="flex gap-x-2 items-center text-[var(--color---12)]">
+                <IoLogoFacebook />
+                <AiFillInstagram />
+              </div>
+            </div>
+          </Container>
+        </div>
+
+        <div className="nav py-6 bg-red-300">
+          <Container className='flex justify-between items-center'>
+            <div className="">
+              <Link href='#'>
+                <Image src={Logo} alt={Logo} />
+              </Link>
+            </div>
+            <div className="menu">a</div>
+            <div className="button">a</div>
+          </Container>
+        </div>
       </nav>
     </>
   )

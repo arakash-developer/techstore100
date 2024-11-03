@@ -6,7 +6,7 @@ const Li = ({liText,to,className}) => {
   return (
     <>
         <li>
-            <Link className={`font-semibold text-sm text-center text-[var(--color---7)] ${className}`} href={to}>{liText}</Link>
+            <Link className={`font-semibold text-sm text-center text-[var(--color---12)] lg:text-[var(--color---7)] ${className}`} href={to}>{liText}</Link>
         </li>
     </>
   )

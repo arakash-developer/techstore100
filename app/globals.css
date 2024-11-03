@@ -22,3 +22,6 @@
 .searchbarMob input{
 	@apply w-full h-full absolute left-0 top-0  bg-yellow-400
 }
+.cartbox-shad{
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.14);
+}

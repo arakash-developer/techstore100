@@ -13,6 +13,7 @@ import Container from "./Container"
 import { AiFillInstagram } from "react-icons/ai";
 import Image from "next/image";
 import Link from "next/link";
+import Li from "./Li";
 
 
 
@@ -44,8 +45,8 @@ const navbar = () => {
               <Li className='text-[#000] md:text-[#767676]' liText='Home' to='/home' />
               <Li className='text-[#000] md:text-[#767676]' liText='Shop' to='/shop' />
               <Li className='text-[#000] md:text-[#767676]' liText='About' to='/faq' />
-              <Li className='text-[#000] md:text-[#767676]' liText='Contacts' to='/about' />
               <Li className='text-[#000] md:text-[#767676]' liText='Journal' to='/contact' />
+              <Li className='text-[#000] md:text-[#767676]' liText='Contacts' to='/about' />
             </ul>
 
 
@@ -75,7 +76,14 @@ const navbar = () => {
                 <Image src={Logo} alt={Logo} />
               </Link>
             </div>
-            <div className="menu">a</div>
+            <ul className={`flex gap-x-[40px] mynav w-full justify-center pl-[12px] absolute left-0 top-full z-[99999]  py-4 md:static  flex-col md:flex-row bg-slate-200 md:bg-transparent transition-all duration-100 }`}>
+              <Li className='' liText='Home' to='/home' />
+              <Li className='' liText='Shop' to='/shop' />
+              <Li className='' liText='About' to='/faq' />
+              <Li className='' liText='Journal' to='/contact' />
+              <Li className='' liText='Contacts' to='/about' />
+            </ul>
+
             <div className="button">a</div>
           </Container>
         </div>

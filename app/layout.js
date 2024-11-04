@@ -2,10 +2,11 @@ import "./globals.css";
 import { Poppins } from 'next/font/google'
 import Navbar from '@/app/component/layers/Navbar'
 import Footer from "./component/pages/Footer";
+import StoreProvider from "./StoreProvider";
 
 const popins = Poppins({
-  subsets:['latin'],
-  weight:['100','200','300','400','500','600','700','800'],
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
 })
 
 export const metadata = {
@@ -16,12 +17,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${popins.className} antialiased`}
-      >
-        <Navbar />
-        {children}
-        <Footer />
+      <body className={`${popins.className} antialiased`}>
+        <StoreProvider>
+            <Navbar />
+              {children}
+            <Footer />
+        </StoreProvider>
       </body>
     </html>
   );

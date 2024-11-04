@@ -1,11 +1,12 @@
+import Link from 'next/link'
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+
 
 const FootLi = ({liText,to,className}) => {
   return (
     <>
         <li>
-            <NavLink  className={`capitalize font-normal text-sm leading-[164%] text-[#6d6d6d] font-dm ${className}`} to={to}>{liText}</NavLink>
+            <Link  className={`font-normal text-[0.81rem] leading-[140%] text-[var(--color---12)] ${className}`} href={to}>{liText}</Link>
         </li>
     </>
   )

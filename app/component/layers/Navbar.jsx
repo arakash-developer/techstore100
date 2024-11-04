@@ -96,7 +96,7 @@ const navbar = () => {
                 </div>
                 <div className="relative">
                   <Image src={Cart} alt="Cart" />
-                  <div className="w-80 h-[31.94rem] bg-[var(--color---12)] absolute right-0 top-[140%] py-6 flex items-center flex-col cartbox-shad z-50">
+                  <div className="w-80 h-[31.94rem] bg-[var(--color---12)] absolute right-0 top-[140%] py-6 flex items-center flex-col cartbox-shad z-50 invisible">
                     <h3 className="font-semibold text-lg leading-[140%] text-center text-[var(--color---7)]">My Cart</h3>
                     <p className="font-normal text-xs text-center text-[var(--color---5)] pt-[6px] pb-4 capitalize"><span className="text-[var(--color---3)] font-bold text-sm">2</span> item in cart</p>
                     <Link href='#' className="font-semibold text-sm text-center text-[var(--color---3)] border-[var(--color---3)] py-2 px-[48px] border rounded-full inline-block mb-5">View or Edit Your Cart</Link>

@@ -13,6 +13,9 @@ import Link from "next/link";
 import Li from "./Li";
 import { FaBarsStaggered } from "react-icons/fa6";
 import Product from "@/public/product.jpg";
+import Edit from "@/public/edit.png";
+import Delete from "@/public/delete.png";
+import Paypal from "@/public/paypal.png";
 
 
 
@@ -88,22 +91,88 @@ const navbar = () => {
                   <p className="font-bold text-[0.63rem] text-center text-[var(--color---12)]">2</p>
                 </div>
                 <div className="relative">
-                <Image src={Cart} alt="Cart" />
-                <div className="w-80 h-[31.94rem] bg-[var(--color---12)] absolute right-0 top-[140%] py-6 flex items-center flex-col cartbox-shad z-50">
-                  <h3 className="font-semibold text-lg leading-[140%] text-center text-[var(--color---7)]">My Cart</h3>
-                  <p className="font-normal text-xs text-center text-[var(--color---5)] pt-[6px] pb-4 capitalize"><span className="text-[var(--color---3)] font-bold text-sm">2</span> item in cart</p>
-                  <Link href='#' className="font-semibold text-sm text-center text-[var(--color---3)] border-[var(--color---3)] py-2 px-[48px] border rounded-full inline-block mb-5">View or Edit Your Cart</Link>
-                  <div className="border-t border-[var(--color---6)] w-full flex justify-center">
-                    <div className="py-[18px] flex items-center">
-                     <h4 className="font-normal text-lg leading-[140%] text-center text-[var(--color---7)]">1 <span className="text-[14px]">X</span></h4>
-                     <Image className="inline-block ml-1" src={Product} alt="aa"/>
-                     <h3 className="w-[60%] font-normal text-[0.81rem] text-[var(--color---7)]">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                  <Image src={Cart} alt="Cart" />
+                  <div className="w-80 h-[31.94rem] bg-[var(--color---12)] absolute right-0 top-[140%] py-6 flex items-center flex-col cartbox-shad z-50">
+                    <h3 className="font-semibold text-lg leading-[140%] text-center text-[var(--color---7)]">My Cart</h3>
+                    <p className="font-normal text-xs text-center text-[var(--color---5)] pt-[6px] pb-4 capitalize"><span className="text-[var(--color---3)] font-bold text-sm">2</span> item in cart</p>
+                    <Link href='#' className="font-semibold text-sm text-center text-[var(--color---3)] border-[var(--color---3)] py-2 px-[48px] border rounded-full inline-block mb-5">View or Edit Your Cart</Link>
+                    <div className="CartsContainer border-t border-[var(--color---6)] w-full h-[50%] overflow-y-scroll">
+                    
+                      <div className="item flex justify-center border-b border-[var(--color---6)] px-4">
+                        <div className="py-[18px] flex items-center">
+                          <h4 className="font-normal text-lg leading-[140%] text-center text-[var(--color---7)]">1 <span className="text-[14px]">X</span></h4>
+                          <Image className="inline-block ml-1" src={Product} alt="aa" />
+                          <h3 className="w-[60%] font-normal text-[0.81rem] text-[var(--color---7)]">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                        </div>
+                        <div className="w-[20%] flex flex-col gap-y-1 items-center justify-center">
+                          <Image className="h-5 w-5" src={Delete} alt="delete" />
+                          <Image className="h-5 5-5" src={Edit} alt="edit" />
+                        </div>
+                      </div>
+                      <div className="item flex justify-center border-b border-[var(--color---6)] px-4">
+                        <div className="py-[18px] flex items-center">
+                          <h4 className="font-normal text-lg leading-[140%] text-center text-[var(--color---7)]">1 <span className="text-[14px]">X</span></h4>
+                          <Image className="inline-block ml-1" src={Product} alt="aa" />
+                          <h3 className="w-[60%] font-normal text-[0.81rem] text-[var(--color---7)]">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                        </div>
+                        <div className="w-[20%] flex flex-col gap-y-1 items-center justify-center">
+                          <Image className="h-5 w-5" src={Delete} alt="delete" />
+                          <Image className="h-5 5-5" src={Edit} alt="edit" />
+                        </div>
+                      </div>
+                      <div className="item flex justify-center border-b border-[var(--color---6)] px-4">
+                        <div className="py-[18px] flex items-center">
+                          <h4 className="font-normal text-lg leading-[140%] text-center text-[var(--color---7)]">1 <span className="text-[14px]">X</span></h4>
+                          <Image className="inline-block ml-1" src={Product} alt="aa" />
+                          <h3 className="w-[60%] font-normal text-[0.81rem] text-[var(--color---7)]">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                        </div>
+                        <div className="w-[20%] flex flex-col gap-y-1 items-center justify-center">
+                          <Image className="h-5 w-5" src={Delete} alt="delete" />
+                          <Image className="h-5 5-5" src={Edit} alt="edit" />
+                        </div>
+                      </div>
+                      <div className="item flex justify-center border-b border-[var(--color---6)] px-4">
+                        <div className="py-[18px] flex items-center">
+                          <h4 className="font-normal text-lg leading-[140%] text-center text-[var(--color---7)]">1 <span className="text-[14px]">X</span></h4>
+                          <Image className="inline-block ml-1" src={Product} alt="aa" />
+                          <h3 className="w-[60%] font-normal text-[0.81rem] text-[var(--color---7)]">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                        </div>
+                        <div className="w-[20%] flex flex-col gap-y-1 items-center justify-center">
+                          <Image className="h-5 w-5" src={Delete} alt="delete" />
+                          <Image className="h-5 5-5" src={Edit} alt="edit" />
+                        </div>
+                      </div>
+                      <div className="item flex justify-center border-b border-[var(--color---6)] px-4">
+                        <div className="py-[18px] flex items-center">
+                          <h4 className="font-normal text-lg leading-[140%] text-center text-[var(--color---7)]">1 <span className="text-[14px]">X</span></h4>
+                          <Image className="inline-block ml-1" src={Product} alt="aa" />
+                          <h3 className="w-[60%] font-normal text-[0.81rem] text-[var(--color---7)]">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                        </div>
+                        <div className="w-[20%] flex flex-col gap-y-1 items-center justify-center">
+                          <Image className="h-5 w-5" src={Delete} alt="delete" />
+                          <Image className="h-5 5-5" src={Edit} alt="edit" />
+                        </div>
+                      </div>
+                      <div className="item flex justify-center border-b border-[var(--color---6)] px-4">
+                        <div className="py-[18px] flex items-center">
+                          <h4 className="font-normal text-lg leading-[140%] text-center text-[var(--color---7)]">1 <span className="text-[14px]">X</span></h4>
+                          <Image className="inline-block ml-1" src={Product} alt="aa" />
+                          <h3 className="w-[60%] font-normal text-[0.81rem] text-[var(--color---7)]">EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...</h3>
+                        </div>
+                        <div className="w-[20%] flex flex-col gap-y-1 items-center justify-center">
+                          <Image className="h-5 w-5" src={Delete} alt="delete" />
+                          <Image className="h-5 5-5" src={Edit} alt="edit" />
+                        </div>
+                      </div>
+
                     </div>
-                    <div className="flex items-center">
-                      a
+                    <div className="my-2">
+                      <h3 className="font-semibold text-sm leading-[140%] text-center text-[var(--color---5)]">Subtotal: <span className="text-lg text-[var(--color---7)]">$499.00</span></h3>
                     </div>
+                    <Link href="#" className="font-semibold text-sm text-center text-[var(--color---12)] w-64 h-9 rounded-[50px] bg-[var(--color---3)] flex justify-center items-center">Go to Checkout</Link>
+
+                    <Link href="#" className="mt-2 font-semibold text-xs text-center text-[var(--color---7)] flex justify-center items-center w-64 h-9 rounded-[50px] bg-[var(--color---13)]">Go to Checkout <Image className="ml-2" src={Paypal} alt="paypal"/></Link>
                   </div>
-                </div>
                 </div>
               </div>
               <div className="w-9 h-9 bg-red-200 rounded-full overflow-hidden">

@@ -16,6 +16,9 @@
 	--color---12: #fff;
 	--color---13: #FFB800;
 	--color---14: #020203;
+	--color---15: rgba(255, 255, 255, 0.5);
+	--color---16: rgba(255, 255, 255,0.2);
+	--color---17: rgba(255, 255, 255,0.6);
 }
 
 .searchbarMob{

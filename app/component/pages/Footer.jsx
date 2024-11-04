@@ -7,8 +7,8 @@ import { MdFacebook } from "react-icons/md";
 import { SiInstagram } from "react-icons/si";
 import { IoLogoYoutube } from "react-icons/io5";
 import FootLi from '../layers/FootLi'
-
-
+import { AiFillInstagram } from "react-icons/ai";
+import { IoLogoFacebook } from "react-icons/io";
 
 
 const Footer = () => {
@@ -22,60 +22,85 @@ const Footer = () => {
                             <p className='mt-2 font-light text-base leading-[133%] text-[var(--color---12)]'>Be the first to hear about the latest offers.</p>
                         </div>
                         <div className="flex items-center gap-x-6 mt-[25px]">
-                            <input type="text" className='font-light text-sm leading-[143%] text-[var(--color---12)] rounded-[4px] w-96 h-[50px] px-3 inline-block bg-transparent border-2 border-[var(--color---12)]' placeholder='Your Email'/>
+                            <input type="text" className='font-light text-sm leading-[143%] text-[var(--color---12)] rounded-[4px] w-96 h-[50px] px-3 inline-block bg-transparent border-2 border-[var(--color---12)]' placeholder='Your Email' />
                             <button type='button' className='font-semibold text-sm text-center text-[var(--color---12)] rounded-[50px] w-36 h-[50px] bg-[var(--color---3)]'>Subscribe</button>
                         </div>
                     </div>
 
-                    <div className="mt-[47px] flex flex-wrap gap-x-[143px] xl:gap-x-[110px] lg:gap-x-[78px] md:flex-wrap sm:flex-wrap gap-y-[30px]">
-                        <div className="menu">
-                            <h3 className='pb-[17px] font-bold text-base leading-[144%] text-[#262626] font-dm'>MENU</h3>
-                            <ul className='flex flex-col gap-y-[6px]'>
-                                <FootLi liText='Home' to='/home' />
-                                <FootLi liText='Shop' to='/services' />
-                                <FootLi liText='About Us' to='/faq' />
-                                <FootLi liText='Contact Us' to='/about' />
-                                <FootLi liText='Journal' to='/contact' />
+                    <div className="mt-[50px] flex flex-wrap gap-x-[78px] items-start pb-9 border-b border-[var(--color---16)]">
+                        <div className="Information">
+                            <h3 className='font-bold text-sm leading-[100%] text-[var(--color---15)]'>Information</h3>
+                            <ul className='mt-8 flex flex-col gap-y-2'>
+                                <FootLi liText='About Us' to='/about-us' />
+                                <FootLi liText='About Zip' to='/about-zip' />
+                                <FootLi liText='Privacy Policy' to='/privacy-policy' />
+                                <FootLi liText='Search' to='/search' />
+                                <FootLi liText='Terms' to='/terms' />
+                                <FootLi liText='Orders and Returns' to='/orders-and-returns' />
+                                <FootLi liText='Contact Us' to='/contact-us' />
+                                <FootLi liText='Advanced Search' to='/advanced-search' />
+                                <FootLi liText='Newsletter Subscription' to='/newsletter-subscription' />
                             </ul>
                         </div>
-                        <div className="shop">
-                            <h3 className='pb-[17px] font-bold text-base leading-[144%] text-[#262626] font-dm'>SHOP</h3>
-                            <ul className='flex flex-col gap-y-[6px]'>
-                                <FootLi liText='Category 1' to='/' />
-                                <FootLi liText='Category 2' to='/' />
-                                <FootLi liText='Category 3' to='/' />
-                                <FootLi liText='Category 4' to='/' />
-                                <FootLi liText='Category 5' to='/' />
+                        <div className="PC Parts">
+                            <h3 className='font-bold text-sm leading-[100%] text-[var(--color---15)]'>PC Parts</h3>
+                            <ul className='mt-8 flex flex-col gap-y-2'>
+                                <FootLi liText='CPUs' to='/cpus' />
+                                <FootLi liText='Add-On Cards' to='/add-on-cards' />
+                                <FootLi liText='Hard Drives (Internal)' to='/hard-drives-internal' />
+                                <FootLi liText='Graphic Cards' to='/graphic-cards' />
+                                <FootLi liText='Keyboards / Mice' to='/keyboards-mice' />
+                                <FootLi liText='Cases / Power Supplies / Cooling' to='/cases-power-supplies-cooling' />
+                                <FootLi liText='RAM (Memory)' to='/ram-memory' />
+                                <FootLi liText='Software' to='/software' />
+                                <FootLi liText='Speakers / Headsets' to='/speakers-headsets' />
+                                <FootLi liText='Motherboards' to='/motherboards' />
                             </ul>
                         </div>
-                        <div className="help">
-                            <h3 className='pb-[17px] font-bold text-base leading-[144%] text-[#262626] font-dm'>HELP</h3>
-                            <ul className='flex flex-col gap-y-[6px]'>
-                                <FootLi liText='Privacy Policy' to='/' />
-                                <FootLi liText='Terms & Conditions' to='/' />
-                                <FootLi liText='Special E-shop' to='/' />
-                                <FootLi liText='Shipping' to='/' />
-                                <FootLi liText='Secure Payments' to='/' />
+                        <div className="Desktop PCs">
+                            <h3 className='font-bold text-sm leading-[100%] text-[var(--color---15)]'>Desktop PCs</h3>
+                            <ul className='mt-8 flex flex-col gap-y-2'>
+                                <FootLi liText='Custom PCs' to='/custom-pcs' />
+                                <FootLi liText='Servers' to='/servers' />
+                                <FootLi liText='MSI All-In-One PCs' to='/msi-all-in-one-pcs' />
+                                <FootLi liText='HP/Compaq PCs' to='/hp-compaq-pcs' />
+                                <FootLi liText='ASUS PCs' to='/asus-pcs' />
+                                <FootLi liText='Tecs PCs' to='/tecs-pcs' />
                             </ul>
                         </div>
-                        <div className="contact">
-                            <h3 className='pb-[17px] font-bold text-base leading-[144%] text-[#262626] font-dm'>(052) 611-5711 <br />
-                                company@domain.com</h3>
-                            <ul className='flex flex-col gap-y-[6px]'>
-                                <FootLi liText='575 Crescent Ave. Quakertown, PA 18951' to='/' />
+
+                        <div className="Laptops">
+                            <h3 className='font-bold text-sm leading-[100%] text-[var(--color---15)]'>Laptops</h3>
+                            <ul className='mt-8 flex flex-col gap-y-1'>
+                                <FootLi liText='Everyday Use Notebooks' to='/everyday-use-notebooks' />
+                                <FootLi liText='MSI Workstation Series' to='/msi-workstation-series' />
+                                <FootLi liText='MSI Prestige Series' to='/msi-prestige-series' />
+                                <FootLi liText='Tablets and Pads' to='/tablets-and-pads' />
+                                <FootLi liText='Netbooks' to='/netbooks' />
+                                <FootLi liText='Infinity Gaming Notebooks' to='/infinity-gaming-notebooks' />
                             </ul>
                         </div>
-                        <div className="logo xl:pl-[118px] pl-[0px]">
-                            {/* <Link><img className='w-[122px] h-auto' src={orebi} alt="aa" /></Link> */}
+                        <div className="Address">
+                            <h3 className='font-bold text-sm leading-[100%] text-[var(--color---15)]'>Address</h3>
+                            <ul className='mt-8 flex flex-col gap-y-1'>
+                                <FootLi liText='Address: 1234 Street Adress City Address, 1234' to='#' />
+                                <FootLi liText='Phones:' span=' (00) 1234 5678' to='#' />
+                                <FootLi liText='We are open: Monday-Thursday: 9:00 AM - 5:30 PM' to='#' />
+                                <FootLi liText='Friday: 9:00 AM - 6:00 PM' to='#' />
+                                <FootLi liText='Saturday: 11:00 AM - 5:00 PM' to='#' />
+                                <FootLi liText='E-mail:' span='shop@email.com' to='#' />
+                            </ul>
                         </div>
                     </div>
-                    <div className="bottom pt-[65px] pb-[52px] flex flex-wrap gap-y-2 justify-between items-center">
-                        <div className="flex gap-x-[25px] items-center">
-                            {/* <img src={fb} alt="" />
-                            <img src={lindin} alt="" />
-                            <img src={ins} alt="" /> */}
+                    <div className="py-5 flex items-center justify-between">
+                        <div className="flex items-center gap-x-2">
+                            <IoLogoFacebook className='text-[var(--color---17)] w-[18px] h-[18px]' />
+                            <AiFillInstagram className='text-[var(--color---17)] w-[18px] h-[18px]' />
                         </div>
-                        <p className='font-normal text-sm leading-[164%] text-right text-[#6d6d6d] font-dm'>2020 Orebi Minimal eCommerce Figma Template by Adveits</p>
+                        <div className="flex items-center gap-x-2">
+                            a
+                        </div>
+                        <p className='font-medium text-xs leading-[133%] text-right text-[var(--color---17)]'>Copyright © 2020 Shop Pty. Ltd.</p>
                     </div>
                 </Container>
             </section>

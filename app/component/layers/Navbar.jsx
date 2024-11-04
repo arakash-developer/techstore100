@@ -28,6 +28,10 @@ const navbar = () => {
   let SearchbarHandler = () => {
     setSearchbar(!searchbar);
   }
+
+  console.log("I Am Coming From Brouwser");
+
+
   return (
     <>
       <nav className="relative">
@@ -57,7 +61,7 @@ const navbar = () => {
               <input type="text" className="w-full bg-[var(--color---1)] rounded-[32px] px-5 h-[60px] outline-[var(--color---3)]" placeholder="Search entiere store here..." />
             </div>
 
-            <ul className={`flex flex-col lg:flex-row gap-y-2 lg:gap-x-3 xl:gap-x-[40px] gap-x-3 items-center bg-[var(--color---11)] lg:bg-transparent w-full lg:w-auto py-4 lg:py-0 absolute left-0 top-0 lg:static transition-all ${show ? "visible top-full" : "invisible lg:visible"} ${searchbar ? "lg:hidden" : "lg:flex"}`}>
+            <ul className={`flex flex-col lg:flex-row gap-y-2 lg:gap-x-6 xl:gap-x-[40px] gap-x-3 items-center bg-[var(--color---11)] lg:bg-transparent w-full lg:w-auto py-4 lg:py-0 absolute left-0 top-0 lg:static transition-all ${show ? "visible top-full" : "invisible lg:visible"} ${searchbar ? "lg:hidden" : "lg:flex"}`}>
               <Li className='' liText='Laptops' to='/laptop' />
               <Li className='' liText='Desktop PCs' to='/desktop' />
               <Li className='' liText='Networking Devices' to='/faq' />
@@ -65,7 +69,7 @@ const navbar = () => {
               <Li className='' liText='PC Parts' to='/about' />
               <Li className='' liText='All Other Products' to='/about' />
               <Li className='' liText='Repairs' to='/about' />
-              <Link href='#' className="font-semibold text-sm  text-[var(--color---3)] inline-block rounded-3xl py-2 px-6 border-2 border-[var(--color---3)]">Our Deals</Link>
+              <Link href='#' className="font-semibold text-sm  text-[var(--color---3)] inline-block rounded-3xl py-2 px-6 border-2 border-[var(--color---3)] lg:hidden xl:inline-block">Our Deals</Link>
             </ul>
 
 
@@ -97,7 +101,7 @@ const navbar = () => {
                     <p className="font-normal text-xs text-center text-[var(--color---5)] pt-[6px] pb-4 capitalize"><span className="text-[var(--color---3)] font-bold text-sm">2</span> item in cart</p>
                     <Link href='#' className="font-semibold text-sm text-center text-[var(--color---3)] border-[var(--color---3)] py-2 px-[48px] border rounded-full inline-block mb-5">View or Edit Your Cart</Link>
                     <div className="CartsContainer border-t border-[var(--color---6)] w-full h-[50%] overflow-y-scroll">
-                    
+
                       <div className="item flex justify-center border-b border-[var(--color---6)] px-4">
                         <div className="py-[18px] flex items-center">
                           <h4 className="font-normal text-lg leading-[140%] text-center text-[var(--color---7)]">1 <span className="text-[14px]">X</span></h4>
@@ -171,7 +175,7 @@ const navbar = () => {
                     </div>
                     <Link href="#" className="font-semibold text-sm text-center text-[var(--color---12)] w-64 h-9 rounded-[50px] bg-[var(--color---3)] flex justify-center items-center">Go to Checkout</Link>
 
-                    <Link href="#" className="mt-2 font-semibold text-xs text-center text-[var(--color---7)] flex justify-center items-center w-64 h-9 rounded-[50px] bg-[var(--color---13)]">Go to Checkout <Image className="ml-2" src={Paypal} alt="paypal"/></Link>
+                    <Link href="#" className="mt-2 font-semibold text-xs text-center text-[var(--color---7)] flex justify-center items-center w-64 h-9 rounded-[50px] bg-[var(--color---13)]">Go to Checkout <Image className="ml-2" src={Paypal} alt="paypal" /></Link>
                   </div>
                 </div>
               </div>

@@ -9,6 +9,7 @@ import { IoLogoYoutube } from "react-icons/io5";
 import FootLi from '../layers/FootLi'
 import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoFacebook } from "react-icons/io";
+import Image from 'next/image';
 
 
 const Footer = () => {
@@ -22,7 +23,7 @@ const Footer = () => {
                             <p className='mt-2 font-light text-base leading-[133%] text-[var(--color---12)]'>Be the first to hear about the latest offers.</p>
                         </div>
                         <div className="flex items-center gap-x-6 mt-[25px]">
-                            <input type="text" className='font-light text-sm leading-[143%] text-[var(--color---12)] rounded-[4px] w-96 h-[50px] px-3 inline-block bg-transparent border-2 border-[var(--color---12)]' placeholder='Your Email' />
+                            <input type="text" className='font-light text-sm leading-[143%] text-[var(--color---12)] rounded-[4px] w-96 h-[50px] px-3 inline-block bg-transparent border-2 border-[var(--color---12)] placeholder-[var(--color---12)]' placeholder='Your Email' />
                             <button type='button' className='font-semibold text-sm text-center text-[var(--color---12)] rounded-[50px] w-36 h-[50px] bg-[var(--color---3)]'>Subscribe</button>
                         </div>
                     </div>
@@ -98,7 +99,8 @@ const Footer = () => {
                             <AiFillInstagram className='text-[var(--color---17)] w-[18px] h-[18px]' />
                         </div>
                         <div className="flex items-center gap-x-2">
-                            a
+                            {/* <Image src={} alt='paypal' /> */}
+                            
                         </div>
                         <p className='font-medium text-xs leading-[133%] text-right text-[var(--color---17)]'>Copyright © 2020 Shop Pty. Ltd.</p>
                     </div>

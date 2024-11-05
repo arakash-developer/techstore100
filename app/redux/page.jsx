@@ -2,7 +2,7 @@
 import React from 'react'
 import Container from '@/app/component/layers/Container'
 import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increment } from '@/app/features/counters/CouterSlice'
+import { decrement, increment } from '@/app/lib/features/counters/CouterSlice'
 
 const Reduxx = () => {
     const dispatch = useDispatch()

@@ -28,10 +28,6 @@ const navbar = () => {
   let SearchbarHandler = () => {
     setSearchbar(!searchbar);
   }
-
-  console.log("I Am Coming From Brouwser");
-
-
   return (
     <>
       <nav className="relative">

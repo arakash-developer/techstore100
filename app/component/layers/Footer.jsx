@@ -1,15 +1,15 @@
 import Link from 'next/link'
-import Container from '../layers/Container'
+import Container from './Container'
 import React from 'react'
-// import logo from '/SoulSpace.png'
-import Li from '../layers/Li'
-import { MdFacebook } from "react-icons/md";
-import { SiInstagram } from "react-icons/si";
-import { IoLogoYoutube } from "react-icons/io5";
-import FootLi from '../layers/FootLi'
+import FootLi from './FootLi'
 import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoFacebook } from "react-icons/io";
 import Image from 'next/image';
+import Paypal from '@/public/paypal2.png'
+import Visa from '@/public/visa.png'
+import Maestro from '@/public/maestro.png'
+import Discover from '@/public/discover.png'
+import America from '@/public/american-express.png'
 
 
 const Footer = () => {
@@ -98,9 +98,12 @@ const Footer = () => {
                             <IoLogoFacebook className='text-[var(--color---17)] w-[18px] h-[18px]' />
                             <AiFillInstagram className='text-[var(--color---17)] w-[18px] h-[18px]' />
                         </div>
-                        <div className="flex items-center gap-x-2">
-                            {/* <Image src={} alt='paypal' /> */}
-                            
+                        <div className="flex items-center gap-x-[10px]">
+                            <Image src={Paypal} alt={Paypal} />
+                            <Image src={Visa} alt={Visa} />
+                            <Image src={Maestro} alt={Maestro} />
+                            <Image src={Discover} alt={Discover} />
+                            <Image src={America} alt={America} />
                         </div>
                         <p className='font-medium text-xs leading-[133%] text-right text-[var(--color---17)]'>Copyright © 2020 Shop Pty. Ltd.</p>
                     </div>

@@ -53,7 +53,7 @@ const navbar = () => {
               </Link>
             </div>
 
-            <div className={`w-[60%] SearchBar px-3 ${searchbar ? "w-[80%] lg:w-[90%] lg:visible" : "lg:invisible sm:w-[80%] lg:w-0"}`}>
+            <div className={`w-[60%] SearchBar px-3 ${searchbar ? "w-[80%] lg:w-[85%] lg:visible" : "lg:invisible sm:w-[80%] lg:w-0"}`}>
               <input type="text" className="w-full bg-[var(--color---1)] rounded-[32px] px-5 h-[60px] outline-[var(--color---3)]" placeholder="Search entiere store here..." />
             </div>
 

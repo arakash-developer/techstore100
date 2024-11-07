@@ -17,18 +17,18 @@ const Footer = () => {
         <>
             <section id='footer' className='pt-[47px] pb-[18px] bg-[var(--color---14)]'>
                 <Container className=''>
-                    <div className="flex justify-between items-center">
+                    <div className="flex flex-col justify-between items-start lg:flex-row">
                         <div className="">
                             <h1 className='font-medium text-[2.38rem] leading-[133%] text-[var(--color---12)]'>Sign Up To Our Newsletter.</h1>
                             <p className='mt-2 font-light text-base leading-[133%] text-[var(--color---12)]'>Be the first to hear about the latest offers.</p>
                         </div>
-                        <div className="flex items-center gap-x-6 mt-[25px]">
-                            <input type="text" className='font-light text-sm leading-[143%] text-[var(--color---12)] rounded-[4px] w-96 h-[50px] px-3 inline-block bg-transparent border-2 border-[var(--color---12)] placeholder-[var(--color---12)]' placeholder='Your Email' />
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-6 mt-[25px]">
+                            <input type="text" className='font-light text-sm leading-[143%] text-[var(--color---12)] rounded-[4px] sm:w-96 h-[50px] px-3 inline-block bg-transparent border-2 border-[var(--color---12)] placeholder-[var(--color---12)]' placeholder='Your Email' />
                             <button type='button' className='font-semibold text-sm text-center text-[var(--color---12)] rounded-[50px] w-36 h-[50px] bg-[var(--color---3)]'>Subscribe</button>
                         </div>
                     </div>
 
-                    <div className="mt-[50px] flex flex-wrap gap-x-[78px] items-start pb-9 border-b border-[var(--color---16)]">
+                    <div className="mt-[50px] flex flex-wrap gap-[78px] items-start pb-9 border-b border-[var(--color---16)]">
                         <div className="Information">
                             <h3 className='font-bold text-sm leading-[100%] text-[var(--color---15)]'>Information</h3>
                             <ul className='mt-8 flex flex-col gap-y-2'>
@@ -93,7 +93,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="py-5 flex items-center justify-between">
+                    <div className="py-5 flex items-center justify-between flex-wrap gap-5">
                         <div className="flex items-center gap-x-2">
                             <IoLogoFacebook className='text-[var(--color---17)] w-[18px] h-[18px]' />
                             <AiFillInstagram className='text-[var(--color---17)] w-[18px] h-[18px]' />

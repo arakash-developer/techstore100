@@ -1,8 +1,9 @@
 "use client"
-import React from 'react'
+import React, { useRef } from 'react'
 import Container from '@/app/component/layers/Container'
 import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment } from '@/app/lib/features/counters/CouterSlice'
+import {increasebyNumber } from '@/app/lib/features/makers/MakersSlice'
 
 const Reduxx = () => {
     const dispatch = useDispatch()
@@ -17,6 +18,14 @@ const Reduxx = () => {
         dispatch(decrement(id))
 
     }
+  
+    let handlerIncByNum = () => {
+        let val = document.querySelector("#val")
+        console.log(val.value)
+        
+        dispatch(increasebyNumber(val.value))
+    }
+    
     return (
         <div>
             <Container className='py-10'>
@@ -36,6 +45,11 @@ const Reduxx = () => {
                         </div>
                     ))
                 }
+                <div className="mt-5">
+                    <h1>5</h1>
+                    <input id='val' type="text" placeholder='Number' className='border border-red-300 mr-5 px-2 py-3' />
+                    <button onClick={handlerIncByNum} type='button' className='px-5 py-3 bg-red-300 mt-5'>Increase By Number</button>
+                </div>
             </Container>
         </div>
     )

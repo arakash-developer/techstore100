@@ -16,9 +16,12 @@ const MakersSlice =  createSlice({
         },
         reset : (state) =>{
             state.maker = 0
+        },
+        increasebyNumber : (state,action)=>{
+            state.maker = state.maker + action.payload
         }
      }
 })
 
 export default MakersSlice.reducer;
-export const { increment,decrement,reset} = MakersSlice.actions;
+export const { increment,decrement,reset,increasebyNumber} = MakersSlice.actions;

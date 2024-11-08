@@ -15,7 +15,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className='absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer rounded-none w-9 h-12 bg-[var(--color---18)] justify-center items-center rounded-l-[30px]'
+      className='absolute right-0 top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-none w-9 h-12 bg-[var(--color---18)] justify-center items-center rounded-l-[30px]'
       style={{ ...style, display: "flex"}}
       onClick={onClick}
       >

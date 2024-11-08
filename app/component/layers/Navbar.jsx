@@ -30,7 +30,7 @@ const navbar = () => {
   }
   return (
     <>
-      <nav className="relative">
+      <nav className="relative z-50">
         <div className="navtop bg-[var(--color---11)] py-2">
           <Container className='flex justify-between items-center'>
             <p className="font-semibold text-xs text-[var(--color---5)] w-full lg:w-auto">Mon-Thu: <span className="text-[var(--color---12)]">9:00 AM - 5:30 PM</span></p>

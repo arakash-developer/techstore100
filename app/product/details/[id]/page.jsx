@@ -1,21 +1,20 @@
+import Container from '@/app/component/layers/Container';
+import getAllData from '@/app/lib/getAllData';
 import React from 'react'
-import getAllData from '../lib/getAllData';
-import Container from '../component/layers/Container';
-import Link from 'next/link';
 
-const page = async () => {
+const page = async({params}) => {
+    const { id } = params;
     let res = await getAllData();
     let result = await res.data.products
+    let newdata = result.filter((item)=>(item.id == id))
 
     return (
         <Container>
             <div className='my-52'>
                 {
-                    result.map((item) => (
+                    newdata.map((item) => (
                         <div className="" key={item.id}>
-                            <Link href={`/product/details/${item.id}`}>
-                                <h1>{item.title}</h1>
-                            </Link>
+                            <h1>{item.title}</h1>
                         </div>
                     ))
                 }

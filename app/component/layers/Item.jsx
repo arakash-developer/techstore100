@@ -58,7 +58,7 @@ import React from 'react'
 
 const Item = ({className}) => {
   return (
-    <div className={`${className} w-60 h-80 bg-[var(--color---12)]`}>
+    <div className={`${className} w-[234px] h-[346px] bg-[var(--color---12)]`}>
       <div className="w-full h-full bg-red-400 ">
         aaa
       </div>

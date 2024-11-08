@@ -13,7 +13,7 @@ function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
       <div
-        className='absolute right-[0px] top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-none w-9 h-12 bg-[var(--color---18)] justify-center items-center rounded-l-[30px]'
+        className='absolute right-[1px] top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-none w-9 h-12 bg-[var(--color---18)] justify-center items-center rounded-l-[30px]'
         style={{ ...style, display: "flex"}}
         onClick={onClick}
         >
@@ -45,7 +45,7 @@ const NewProduct = () => {
         prevArrow: <SamplePrevArrow />,
         responsive: [
             {
-              breakpoint: 1280,
+              breakpoint: 1400,
               settings: {
                 slidesToShow: 5,
                 slidesToScroll: 1,
@@ -54,18 +54,35 @@ const NewProduct = () => {
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 1024,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 4,
                 slidesToScroll: 2,
                 initialSlide: 2
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 640,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 400,
               settings: {
                 slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToScroll: 1,
+                initialSlide: 2
               }
             }
           ]

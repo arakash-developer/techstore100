@@ -1,11 +1,11 @@
 import React from 'react'
-
-
+import Bannar from './component/layers/Bannar';
 
 const page = () => {
+
   return (
     <>
-    <h1>dsgps</h1>
+    <Bannar />
     </>
   )
 }

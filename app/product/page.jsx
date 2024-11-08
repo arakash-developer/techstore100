@@ -1,29 +1,24 @@
-"use client"
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import getAllData from '../lib/getAllData';
+import Container from '../component/layers/Container';
 
-const page = () => {
-    let [products,setProducts] = useState([]);
-    useEffect(()=>{
-        let getdata = async() =>{
-            let blops = await fetch("https://techstorevercelapp.vercel.app/akash/api/products");
-            let res = await blops.json()
-            let result = await res.data.products
-            console.log(result);
-            setProducts(result)
-        }
-        getdata();
-    },[])
-  return (
-    <div className='my-52'>
-        {
-            products.map((item)=>(
-                <div className="" key={item.id}>
-                  <h1>{item.title}</h1>
-                </div>
-            ))
-        }
-    </div>
-  )
+const page = async () => {
+    let res = await getAllData();
+    let result = await res.data.products
+
+    return (
+        <Container>
+            <div className='my-52'>
+                {
+                    result.map((item) => (
+                        <div className="" key={item.id}>
+                            <h1>{item.title}</h1>
+                        </div>
+                    ))
+                }
+            </div>
+        </Container>
+    )
 }
 
 export default page

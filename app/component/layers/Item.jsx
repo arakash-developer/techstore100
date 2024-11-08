@@ -54,13 +54,14 @@
 // }
 
 // export default Item
-
 import React from 'react'
 
 const Item = ({className}) => {
   return (
-    <div className={`w-60 h-80 ${className}`}>
-        <div className="w-full h-full bg-red-300"></div>
+    <div className={`${className} w-60 h-80 bg-[var(--color---12)]`}>
+      <div className="w-full h-full bg-red-400 ">
+        aaa
+      </div>
     </div>
   )
 }

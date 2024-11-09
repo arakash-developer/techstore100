@@ -1,8 +1,16 @@
 const getAllData = async () => {
-    const result = await fetch("https://techstorevercelapp.vercel.app/akash/api/products")
-    if(!result.ok){
+    const result = await fetch("https://techstorevercelapp.vercel.app/akash/api/products",
+        {
+            // cache:"force-cache",
+            // cache:"no-store",
+            next: {
+                revalidate : 1,
+            }    
+        }
+    )
+    if (!result.ok) {
         throw new Error("There Was An Error Fething Data")
-    }else{
+    } else {
         return result.json()
     }
 

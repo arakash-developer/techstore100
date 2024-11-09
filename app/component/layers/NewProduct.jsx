@@ -97,7 +97,13 @@ const NewProduct = () => {
         <Slider {...settings}>
           {
             allproducts.map((item) => (
-              <Item key={item.id} className='w-full px-[1px]' title={item.title} image={item.thumbnail} />
+              <Item 
+              key={item.id} 
+              className='w-full px-[1px]' 
+              id={item.id}
+              title={item.title} 
+              image={item.thumbnail} 
+              />
             ))
           }
         </Slider>

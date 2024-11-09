@@ -22,7 +22,9 @@
 	--color---18: #25293180;
 	--color---19: #E9A426;
 }
-
+*{
+	box-sizing: border-box;
+}
 .searchbarMob{
 	@apply pl-36 py-2 pr-1 relative
 }
@@ -31,4 +33,10 @@
 }
 .cartbox-shad{
 	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.14);
+}
+.bgcolor{
+	@apply cursor-pointer box-border border border-solid border-[transparent]
+}
+.bgcolor:hover{
+	border-color:var(--color---6);
 }

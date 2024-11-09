@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${popins.className} antialiased`}>
+      <body className={`${popins.className}`}>
         <StoreProvider>
             <Navbar />
               {children}

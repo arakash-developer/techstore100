@@ -32,53 +32,53 @@ const Footer = () => {
                         <div className="Information">
                             <h3 className='font-bold text-sm leading-[100%] text-[var(--color---15)]'>Information</h3>
                             <ul className='mt-8 flex flex-col gap-y-2'>
-                                <FootLi liText='About Us' to='/about-us' />
-                                <FootLi liText='About Zip' to='/about-zip' />
-                                <FootLi liText='Privacy Policy' to='/privacy-policy' />
-                                <FootLi liText='Search' to='/search' />
-                                <FootLi liText='Terms' to='/terms' />
-                                <FootLi liText='Orders and Returns' to='/orders-and-returns' />
-                                <FootLi liText='Contact Us' to='/contact-us' />
-                                <FootLi liText='Advanced Search' to='/advanced-search' />
-                                <FootLi liText='Newsletter Subscription' to='/newsletter-subscription' />
+                                <FootLi liText='About Us' to='/' />
+                                <FootLi liText='About Zip' to='/' />
+                                <FootLi liText='Privacy Policy' to='/' />
+                                <FootLi liText='Search' to='/' />
+                                <FootLi liText='Terms' to='/' />
+                                <FootLi liText='Orders and Returns' to='/' />
+                                <FootLi liText='Contact Us' to='/' />
+                                <FootLi liText='Advanced Search' to='/' />
+                                <FootLi liText='Newsletter Subscription' to='/' />
                             </ul>
                         </div>
                         <div className="PC Parts">
                             <h3 className='font-bold text-sm leading-[100%] text-[var(--color---15)]'>PC Parts</h3>
                             <ul className='mt-8 flex flex-col gap-y-2'>
-                                <FootLi liText='CPUs' to='/cpus' />
-                                <FootLi liText='Add-On Cards' to='/add-on-cards' />
-                                <FootLi liText='Hard Drives (Internal)' to='/hard-drives-internal' />
-                                <FootLi liText='Graphic Cards' to='/graphic-cards' />
-                                <FootLi liText='Keyboards / Mice' to='/keyboards-mice' />
-                                <FootLi liText='Cases / Power Supplies / Cooling' to='/cases-power-supplies-cooling' />
-                                <FootLi liText='RAM (Memory)' to='/ram-memory' />
-                                <FootLi liText='Software' to='/software' />
-                                <FootLi liText='Speakers / Headsets' to='/speakers-headsets' />
-                                <FootLi liText='Motherboards' to='/motherboards' />
+                                <FootLi liText='CPUs' to='/' />
+                                <FootLi liText='Add-On Cards' to='/' />
+                                <FootLi liText='Hard Drives (Internal)' to='/' />
+                                <FootLi liText='Graphic Cards' to='/' />
+                                <FootLi liText='Keyboards / Mice' to='/' />
+                                <FootLi liText='Cases / Power Supplies / Cooling' to='/' />
+                                <FootLi liText='RAM (Memory)' to='/' />
+                                <FootLi liText='Software' to='' />
+                                <FootLi liText='Speakers / Headsets' to='/' />
+                                <FootLi liText='Motherboards' to='/' />
                             </ul>
                         </div>
                         <div className="Desktop PCs">
                             <h3 className='font-bold text-sm leading-[100%] text-[var(--color---15)]'>Desktop PCs</h3>
                             <ul className='mt-8 flex flex-col gap-y-2'>
-                                <FootLi liText='Custom PCs' to='/custom-pcs' />
-                                <FootLi liText='Servers' to='/servers' />
-                                <FootLi liText='MSI All-In-One PCs' to='/msi-all-in-one-pcs' />
-                                <FootLi liText='HP/Compaq PCs' to='/hp-compaq-pcs' />
-                                <FootLi liText='ASUS PCs' to='/asus-pcs' />
-                                <FootLi liText='Tecs PCs' to='/tecs-pcs' />
+                                <FootLi liText='Custom PCs' to='/' />
+                                <FootLi liText='Servers' to='/' />
+                                <FootLi liText='MSI All-In-One PCs' to='/' />
+                                <FootLi liText='HP/Compaq PCs' to='/' />
+                                <FootLi liText='ASUS PCs' to='/' />
+                                <FootLi liText='Tecs PCs' to='/' />
                             </ul>
                         </div>
 
                         <div className="Laptops">
                             <h3 className='font-bold text-sm leading-[100%] text-[var(--color---15)]'>Laptops</h3>
                             <ul className='mt-8 flex flex-col gap-y-1'>
-                                <FootLi liText='Everyday Use Notebooks' to='/everyday-use-notebooks' />
-                                <FootLi liText='MSI Workstation Series' to='/msi-workstation-series' />
-                                <FootLi liText='MSI Prestige Series' to='/msi-prestige-series' />
-                                <FootLi liText='Tablets and Pads' to='/tablets-and-pads' />
-                                <FootLi liText='Netbooks' to='/netbooks' />
-                                <FootLi liText='Infinity Gaming Notebooks' to='/infinity-gaming-notebooks' />
+                                <FootLi liText='Everyday Use Notebooks' to='/' />
+                                <FootLi liText='MSI Workstation Series' to='/' />
+                                <FootLi liText='MSI Prestige Series' to='/' />
+                                <FootLi liText='Tablets and Pads' to='/' />
+                                <FootLi liText='Netbooks' to='/' />
+                                <FootLi liText='Infinity Gaming Notebooks' to='/' />
                             </ul>
                         </div>
                         <div className="Address">

@@ -3,6 +3,20 @@ import getAllData from '../lib/getAllData';
 import Container from '../component/layers/Container';
 import Link from 'next/link';
 
+export async function generateMetadata() {
+    let res = await getAllData();
+    let result = await res.data.products
+    let brand = "TechStore- "
+    return {
+        title: brand + "All Products " + result.map((item) => (
+            item.title
+        )),
+        description: result.map((item) => (
+            item.description
+        )),
+    }
+}
+
 const page = async () => {
     let res = await getAllData();
     let result = await res.data.products

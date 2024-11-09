@@ -2,6 +2,18 @@ import Container from '@/app/component/layers/Container';
 import getAllData from '@/app/lib/getAllData';
 import React from 'react'
 
+export async function generateMetadata({params}) {
+    const { id } = params;
+    let res = await getAllData();
+    let result = await res.data.products
+    let newdata = result.find((item)=>(item.id == id))
+    let brand = "TechStore- "
+    return{
+        title:brand + newdata.title,
+        description:newdata.description,
+    }
+}
+
 const page = async({params}) => {
     const { id } = params;
     let res = await getAllData();

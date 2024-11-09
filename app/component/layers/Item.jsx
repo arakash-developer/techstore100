@@ -55,12 +55,39 @@
 
 // export default Item
 import React from 'react'
+import Image from 'next/image'
+import Successs from '@/public/success.png'
+import Product1 from '@/public/products/product1.jpg'
+import { IoIosStar } from "react-icons/io";
 
-const Item = ({className}) => {
+
+
+const Item = ({ className }) => {
   return (
     <div className={`${className} w-[234px] h-[346px] bg-[var(--color---12)]`}>
-      <div className="w-full h-full bg-red-400 ">
-        aaa
+      <div className="w-full h-full px-6 bgcolor">
+        <div className="flex gap-x-[2px] items-center justify-start my-2">
+          <Image src={Successs} alt={Successs} />
+          <p className='capitalize font-normal text-[0.63rem] leading-[210%] text-[var(--color---9)]'>in stock</p>
+        </div>
+        <div className="w-full h-[150px] flex justify-center">
+          <Image className='w-[150px] h-full object-cover' src={Product1} alt={Product1} />
+        </div>
+        <div className="flex gap-x-2 items-center my-1">
+          <div className="flex gap-x-[2px] items-center">
+            <IoIosStar className='text-[var(--color---19)] text-[13px]' />
+            <IoIosStar className='text-[var(--color---19)] text-[13px]' />
+            <IoIosStar className='text-[var(--color---19)] text-[13px]' />
+            <IoIosStar className='text-[var(--color---19)] text-[13px]' />
+            <IoIosStar className='text-[var(--color---6)] text-[13px]' />
+          </div>
+          <p className='font-normal text-xs leading-[210%] text-[var(--color---6)]'>Reviews (4)</p>
+        </div>
+        <h1 className='font-normal text-[0.81rem] text-[var(--color---7)] h-20 overflow-hidden'>
+          EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+        </h1>
+        <del className='font-normal text-sm leading-[140%] text-[var(--color---10)] mt-2'>$499.00</del>
+        <h2 className='font-semibold text-lg leading-[140%] text-[var(--color---7)]'>$499.00</h2>
       </div>
     </div>
   )

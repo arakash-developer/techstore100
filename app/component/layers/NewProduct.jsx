@@ -86,8 +86,7 @@ const NewProduct = () => {
   useEffect(() => {
     let getdata = async () => {
       let res = await getAllData();
-      let result = await res.data.products
-      setAllProducts(result)
+      setAllProducts(res)
     }
     getdata()
   }, [])

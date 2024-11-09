@@ -7,8 +7,7 @@ import React from 'react'
 export async function generateMetadata({ params }) {
     const { id } = await params;
     let res = await getAllData();
-    let result = await res.data.products
-    let newdata = result.find((item) => (item.id == id))
+    let newdata = res.find((item) => (item.id == id))
     let brand = "TechStore- "
     return {
         title: brand + newdata.title,
@@ -19,15 +18,10 @@ export async function generateMetadata({ params }) {
 const page = async ({ params }) => {
     const { id } = await params;
     let res = await getAllData();
-    let result = await res.data.products
-    let newdata = result.filter((item) => (item.id == id))
-    // console.log(newdata[0].reviews[0].comment);
+    let newdata = res.filter((item) => (item.id == id))
     let Allcomments = newdata.map((item) => {
         return item.reviews
     })
-    console.log(Allcomments);
-
-
     return (
         <Container>
             <PreviewImage newdata={newdata} />

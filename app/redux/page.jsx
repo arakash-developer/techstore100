@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Container from '@/app/component/layers/Container'
 import { useDispatch, useSelector } from 'react-redux'
 import { decrement, increment } from '@/app/lib/features/counters/CouterSlice'
@@ -38,9 +38,18 @@ const Reduxx = () => {
             return state.makers
         })
     
-        console.log(Makerss);
+        // console.log(Makerss);
         const totalCount2 = Makerss.reduce((prevvalue, currentvalue) => (prevvalue + currentvalue.maker), 0)
-        console.log(totalCount2);
+        // console.log(totalCount2);
+
+        useEffect(()=>{
+            let getdata = async()=>{
+                let blops = await fetch("https://akashtechstore.onrender.com/products")
+                let res = await blops.json()
+                console.log(res);
+            }
+            getdata()
+        },[])
         return (
         <div>
             <Container className='py-10'>

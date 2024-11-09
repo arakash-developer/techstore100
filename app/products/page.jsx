@@ -5,10 +5,9 @@ import Link from 'next/link';
 
 export async function generateMetadata() {
     let res = await getAllData();
-    let result = await res.data.products
     let brand = "TechStore- "
     return {
-        title: brand + "All Products " + result.map((item) => (
+        title: brand + "All Products " + res.map((item) => (
             item.title
         )),
         description: result.map((item) => (

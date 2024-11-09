@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
 }
 
 const page = async ({ params }) => {
-    const { id } = await params;
+    const {id} = await params;
     let res = await getAllData();
     let newdata = res.filter((item) => (item.id == id))
     let Allcomments = newdata.map((item) => {

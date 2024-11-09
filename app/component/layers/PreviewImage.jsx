@@ -14,6 +14,7 @@ const PreviewImage = ({newdata}) => {
         newdata.map((item) => {
           return (
             <div className='flex' key={item.id}>
+              <p>{item.title}</p>
               {
                 item.images.map((image,index)=>(
                   <div key={index} className=""   onClick={() => handlePreviewImageChange(image)}>

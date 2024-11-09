@@ -1,11 +1,11 @@
 const getAllData = async () => {
     const result = await fetch("https://techstorevercelapp.vercel.app/akash/api/products",
         {
-            // cache:"force-cache",
+            cache:"force-cache",
             // cache:"no-store",
-            next: {
-                revalidate : 1,
-            }    
+            // next: {
+            //     revalidate : 1,
+            // }    
         }
     )
     if (!result.ok) {

@@ -1,11 +1,11 @@
 const getAllData = async () => {
     const blops = await fetch("https://akashtechstore.onrender.com/products",
         {
-            // cache:"force-cache",
+            cache:"force-cache",
             // cache:"no-store",
-            next: {
-                revalidate : 10,
-            }    
+            // next: {
+            //     revalidate : 10,
+            // }    
         }
     )
     if (!blops.ok) {

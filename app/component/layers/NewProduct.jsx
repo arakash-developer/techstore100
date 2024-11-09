@@ -83,13 +83,12 @@ const NewProduct = () => {
     ]
   }
   let [allproducts, setAllProducts] = useState([])
-  useEffect(() => {
     let getdata = async () => {
       let res = await getAllData();
       setAllProducts(res)
     }
     getdata()
-  }, [])
+
   return (
     <div className='my-5'>
       <Container className='max-w-[1404px]'>

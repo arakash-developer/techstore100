@@ -10,7 +10,7 @@ export async function generateMetadata() {
         title: brand + "All Products " + res.map((item) => (
             item.title
         )),
-        description: result.map((item) => (
+        description: res.map((item) => (
             item.description
         )),
     }

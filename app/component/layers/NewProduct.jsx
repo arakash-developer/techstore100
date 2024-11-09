@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Container from './Container'
 import Item from './Item'
 import Slider from "react-slick";
@@ -50,15 +50,13 @@ const NewProduct = () => {
         settings: {
           slidesToShow: 5,
           slidesToScroll: 1,
-          infinite: true,
         }
       },
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 4,
-          slidesToScroll: 2,
-          initialSlide: 2
+          slidesToScroll: 1,
         }
       },
       {
@@ -66,7 +64,6 @@ const NewProduct = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-          initialSlide: 2
         }
       },
       {
@@ -74,7 +71,6 @@ const NewProduct = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          initialSlide: 2
         }
       },
       {
@@ -82,25 +78,26 @@ const NewProduct = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2
         }
       }
     ]
   }
-  let[allproducts,setAllProducts] = useState([])
-  let getdata = async()=>{
-    let res = await getAllData();
-    let result = await res.data.products
-    setAllProducts(result)
-  }
-  getdata()  
+  let [allproducts, setAllProducts] = useState([])
+  useEffect(() => {
+    let getdata = async () => {
+      let res = await getAllData();
+      let result = await res.data.products
+      setAllProducts(result)
+    }
+    getdata()
+  }, [])
   return (
     <div className='my-5'>
       <Container className='max-w-[1404px]'>
         <Slider {...settings}>
           {
-            allproducts.map((item)=>(
-              <Item key={item.id} className='w-full px-[1px]' title={item.title} image={item.thumbnail}/>
+            allproducts.map((item) => (
+              <Item key={item.id} className='w-full px-[1px]' title={item.title} image={item.thumbnail} />
             ))
           }
         </Slider>

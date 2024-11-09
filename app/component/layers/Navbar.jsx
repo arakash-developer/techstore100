@@ -58,13 +58,13 @@ const navbar = () => {
             </div>
 
             <ul className={`flex flex-col lg:flex-row gap-y-2 lg:gap-x-6 xl:gap-x-[40px] gap-x-3 items-center bg-[var(--color---11)] lg:bg-transparent w-full lg:w-auto py-4 lg:py-0 absolute left-0 top-0 lg:static transition-all ${show ? "visible top-full" : "invisible lg:visible"} ${searchbar ? "lg:hidden" : "lg:flex"}`}>
-              <Li className='' liText='Laptops' to='/laptop' />
-              <Li className='' liText='Desktop PCs' to='/desktop' />
-              <Li className='' liText='Networking Devices' to='/faq' />
-              <Li className='' liText='Printers & Scanners' to='/contact' />
-              <Li className='' liText='PC Parts' to='/about' />
-              <Li className='' liText='All Other Products' to='/about' />
-              <Li className='' liText='Repairs' to='/about' />
+              <Li className='' liText='Laptops' to='/' />
+              <Li className='' liText='Desktop PCs' to='/' />
+              <Li className='' liText='Networking Devices' to='/' />
+              <Li className='' liText='Printers & Scanners' to='/' />
+              <Li className='' liText='PC Parts' to='/' />
+              <Li className='' liText='All Other Products' to='/' />
+              <Li className='' liText='Repairs' to='/' />
               <Link href='#' className="font-semibold text-sm  text-[var(--color---3)] inline-block rounded-3xl py-2 px-6 border-2 border-[var(--color---3)] lg:hidden xl:inline-block">Our Deals</Link>
             </ul>
 

@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import Container from './Container'
 import Item from './Item'
 import Slider from "react-slick";
@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import getAllData from '@/app/lib/getAllData';
 
 
 function SampleNextArrow(props) {
@@ -86,18 +87,22 @@ const NewProduct = () => {
       }
     ]
   }
+  let[allproducts,setAllProducts] = useState([])
+  let getdata = async()=>{
+    let res = await getAllData();
+    let result = await res.data.products
+    setAllProducts(result)
+  }
+  getdata()  
   return (
     <div className='my-5'>
       <Container className='max-w-[1404px]'>
         <Slider {...settings}>
-          <Item className='w-full px-[1px]' />
-          <Item className='w-full px-[1px]' />
-          <Item className='w-full px-[1px]' />
-          <Item className='w-full px-[1px]' />
-          <Item className='w-full px-[1px]' />
-          <Item className='w-full px-[1px]' />
-          <Item className='w-full px-[1px]' />
-          <Item className='w-full px-[1px]' />
+          {
+            allproducts.map((item)=>(
+              <Item key={item.id} className='w-full px-[1px]' title={item.title} image={item.thumbnail}/>
+            ))
+          }
         </Slider>
       </Container>
     </div>

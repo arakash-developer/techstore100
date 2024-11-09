@@ -62,7 +62,7 @@ import { IoIosStar } from "react-icons/io";
 
 
 
-const Item = ({ className }) => {
+const Item = ({className,title,image}) => {
   return (
     <div className={`${className} w-[234px] h-[346px] bg-[var(--color---12)]`}>
       <div className="w-full h-full px-6 bgcolor">
@@ -71,7 +71,7 @@ const Item = ({ className }) => {
           <p className='capitalize font-normal text-[0.63rem] leading-[210%] text-[var(--color---9)]'>in stock</p>
         </div>
         <div className="w-full h-[150px] flex justify-center">
-          <Image className='w-[150px] h-full object-cover' src={Product1} alt={Product1} />
+          <Image className='w-[150px] h-full object-cover' width='150' height='150' src={image} alt={Product1} />
         </div>
         <div className="flex gap-x-2 items-center my-1">
           <div className="flex gap-x-[2px] items-center">
@@ -84,7 +84,7 @@ const Item = ({ className }) => {
           <p className='font-normal text-xs leading-[210%] text-[var(--color---6)]'>Reviews (4)</p>
         </div>
         <h1 className='font-normal text-[0.81rem] text-[var(--color---7)] h-20 overflow-hidden'>
-          EX DISPLAY : MSI Pro 16 Flex-036AU 15.6 MULTITOUCH All-In-On...
+          {title}
         </h1>
         <del className='font-normal text-sm leading-[140%] text-[var(--color---10)] mt-2'>$499.00</del>
         <h2 className='font-semibold text-lg leading-[140%] text-[var(--color---7)]'>$499.00</h2>

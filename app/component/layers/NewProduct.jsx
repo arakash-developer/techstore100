@@ -83,11 +83,13 @@ const NewProduct = () => {
     ]
   }
   let [allproducts, setAllProducts] = useState([])
+  useEffect(()=>{
     let getdata = async () => {
       let res = await getAllData();
       setAllProducts(res)
     }
     getdata()
+  },[])
 
   return (
     <div className='my-5'>

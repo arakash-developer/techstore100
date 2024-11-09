@@ -21,10 +21,25 @@ const page = async ({ params }) => {
     let res = await getAllData();
     let result = await res.data.products
     let newdata = result.filter((item) => (item.id == id))
+    // console.log(newdata[0].reviews[0].comment);
+    let Allcomments = newdata.map((item) => {
+        return item.reviews
+    })
+    console.log(Allcomments);
+
 
     return (
         <Container>
             <PreviewImage newdata={newdata} />
+
+            {
+                Allcomments[0].map((item) => (
+                    <div className="">
+                        <h2>{item.id}</h2>
+                        <h2>{item.comment}</h2>
+                    </div>
+                ))
+            }
         </Container>
     )
 }

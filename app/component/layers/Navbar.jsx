@@ -48,7 +48,7 @@ const navbar = () => {
         <div className="nav py-6 border-b border-[var(--color---6)] relative">
           <Container className='flex justify-between items-center'>
             <div className="">
-              <Link href='#' className="h-[60px] flex items-center">
+              <Link href='/' className="h-[60px] flex items-center">
                 <Image src={Logo} alt={Logo} />
               </Link>
             </div>

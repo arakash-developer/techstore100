@@ -27,8 +27,8 @@ const page = async ({ params }) => {
             <PreviewImage newdata={newdata} />
 
             {
-                Allcomments[0].map((item) => (
-                    <div className="">
+                Allcomments[0].map((item,index) => (
+                    <div key={index} className="">
                         <h2>{item.id}</h2>
                         <h2>{item.comment}</h2>
                     </div>

@@ -88,7 +88,7 @@ const Item = ({className,id,title,image}) => {
           <p className='font-normal text-xs leading-[210%] text-[var(--color---6)]'>Reviews (4)</p>
         </div>
         <h1 className='font-normal text-[0.81rem] text-[var(--color---7)] h-16 overflow-hidden'>
-          {title}
+          {title.substr(0,57)+"..."}
         </h1>
         <del className='font-normal text-sm leading-[140%] text-[var(--color---10)] mt-2'>$499.00</del>
         <h2 className='font-semibold text-lg leading-[140%] text-[var(--color---7)]'>$499.00</h2>

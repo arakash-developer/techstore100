@@ -68,7 +68,7 @@ import { IoIosStar } from "react-icons/io";
 const Item = ({className,id,title,image}) => {
   const router = useRouter()
   return (
-    <div className={`${className} w-[234px] h-[346px] bg-[var(--color---12)]`}>
+    <div className={`${className} w-[234px] min-h-[360px] bg-[var(--color---12)]`}>
       <div className="w-full h-full px-6 bgcolor" onClick={() => router.push(`/products/details/${id}`)}>
         <div className="flex gap-x-[2px] items-center justify-start my-2">
           <Image src={Successs} alt={Successs} />
@@ -91,7 +91,7 @@ const Item = ({className,id,title,image}) => {
           {title.substr(0,57)+"..."}
         </h1>
         <del className='font-normal text-sm leading-[140%] text-[var(--color---10)] mt-2'>$499.00</del>
-        <h2 className='font-semibold text-lg leading-[140%] text-[var(--color---7)]'>$499.00</h2>
+        <h2 className='font-semibold text-lg leading-[140%] text-[var(--color---7)] pb-3'>$499.00</h2>
       </div>
     </div>
   )

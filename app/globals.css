@@ -35,7 +35,7 @@
 	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.14);
 }
 .bgcolor{
-	@apply cursor-pointer box-border border border-solid border-[transparent]
+	@apply cursor-pointer box-border border border-solid border-[transparent] bg-[var(--color---1)]
 }
 .bgcolor:hover{
 	border-color:var(--color---6);

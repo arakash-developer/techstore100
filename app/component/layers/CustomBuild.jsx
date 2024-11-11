@@ -18,7 +18,7 @@ const NewProduct = ({ className }) => {
         arrows: false,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 4000,
         slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [

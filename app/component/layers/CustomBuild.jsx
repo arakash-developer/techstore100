@@ -2,12 +2,13 @@
 import React, { useEffect, useState } from 'react'
 import Container from './Container'
 import Item from './Item'
-import Item2 from './Item2'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomBuild from '@/public/custombuild.png'
 import Image from 'next/image'
+import CustomScleton from './CustomScleton'
+import { CustomScletonOne } from './CustomScleton'
 
 
 
@@ -80,16 +81,21 @@ const NewProduct = ({ className }) => {
         <main>
             <div className={`${className}`}>
                 <Container className='max-w-[1404px]'>
-                    {
-                        loading &&
-                        <Slider {...settings}>
-                            <Item2 className='w-full px-[1px]' />
-                            <Item2 className='w-full px-[1px]' />
-                            <Item2 className='w-full px-[1px]' />
-                            <Item2 className='w-full px-[1px]' />
-                            <Item2 className='w-full px-[1px]' />
-                            <Item2 className='w-full px-[1px]' />
-                        </Slider>
+                    {loading &&
+                        <div className="grid grid-cols-12 h-[372px] items-start w-full">
+                            <div className="xsm:w-[234px] h-[372px] lg:col-span-2 md:col-span-3 sm:col-span-4 xsm:col-span-6 col-span-12">
+                                <CustomScletonOne className='w-full px-[1px] h-full object-cover' />
+                            </div>
+                            <div className="w-full h-full bg-[var(--color---12)] md:col-span-9 lg:col-span-10 sm:col-span-8 xsm:col-span-6 hidden xsm:block">
+                                <Slider {...settings}>
+                                    <CustomScleton className='w-full px-[1px]' />
+                                    <CustomScleton className='w-full px-[1px]' />
+                                    <CustomScleton className='w-full px-[1px]' />
+                                    <CustomScleton className='w-full px-[1px]' />
+                                    <CustomScleton className='w-full px-[1px]' />
+                                </Slider>
+                            </div>
+                        </div>
                     }
                     {
                         !loading &&

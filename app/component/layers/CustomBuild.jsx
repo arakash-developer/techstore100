@@ -69,8 +69,6 @@ const NewProduct = ({ className }) => {
         let res = await blops.json()
         setAllProducts(res)
         setLoading(false)
-        // console.log(res);
-
     }
 
     useEffect(() => {

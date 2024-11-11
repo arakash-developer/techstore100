@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <Bannar />
-      <NewProduct />
+      <NewProduct className='my-5'/>
 
     </>
   )

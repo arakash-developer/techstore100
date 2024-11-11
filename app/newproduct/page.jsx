@@ -1,8 +1,8 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import Container from './Container'
-import Item from './Item'
-import Item2 from './Item2'
+import Container from '../component/layers/Container'
+import Item from '../component/layers/Item'
+import Item2 from '../component/layers/Item2'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -36,7 +36,7 @@ function SamplePrevArrow(props) {
 }
 
 
-const NewProduct = ({className}) => {
+const NewProduct = () => {
   let [loading, setLoading] = useState(true)
   const settings = {
     dots: false,
@@ -102,21 +102,28 @@ const NewProduct = ({className}) => {
 
   return (
     <main>
-      <div className={`${className}`}>
-        <Container className='max-w-[1404px]'>
-          {
-            loading &&
+
+    
+
+      {
+        loading &&
+        <div className='my-5'>
+          <Container className='max-w-[1404px]'>
             <Slider {...settings}>
-              <Item2 className='w-full px-[1px]' />
-              <Item2 className='w-full px-[1px]' />
-              <Item2 className='w-full px-[1px]' />
-              <Item2 className='w-full px-[1px]' />
-              <Item2 className='w-full px-[1px]' />
-              <Item2 className='w-full px-[1px]' />
+              <Item2 className='w-full px-[1px]'/>
+              <Item2 className='w-full px-[1px]'/>
+              <Item2 className='w-full px-[1px]'/>
+              <Item2 className='w-full px-[1px]'/>
+              <Item2 className='w-full px-[1px]'/>
+              <Item2 className='w-full px-[1px]'/>
             </Slider>
-          }
-          {
-            !loading &&
+          </Container>
+        </div>
+      }
+      {
+        !loading &&
+        <div className='my-5'>
+          <Container className='max-w-[1404px]'>
             <Slider {...settings}>
               {
                 allproducts?.map((item) => (
@@ -130,12 +137,11 @@ const NewProduct = ({className}) => {
                 ))
               }
             </Slider>
-          }
-
-        </Container>
-      </div>
-
+          </Container>
+        </div>
+      }
     </main>
+
   )
 }
 

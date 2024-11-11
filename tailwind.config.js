@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       screens: {
+        'xsm': '401px',
+        '1xsm': '401px',
         'xxl': '992px',
+        '1xl': '1400px',
       },
       colors: {
         background: "var(--background)",

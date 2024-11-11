@@ -11,7 +11,7 @@ import { IoIosStar } from "react-icons/io";
 const Item = ({className,id,title,image}) => {
   const router = useRouter()
   return (
-    <div className={`${className} w-[234px] min-h-[360px] bg-[var(--color---12)]`}>
+    <div className={`${className} w-[234px] h-[372px] bg-[var(--color---12)]`}>
       <div className="w-full h-full px-6 bgcolor" onClick={() => router.push(`/products/details/${id}`)}>
         <div className="flex gap-x-[2px] items-center justify-start my-2">
           <Image src={Successs} alt={Successs} />

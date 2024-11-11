@@ -36,7 +36,7 @@ function SamplePrevArrow(props) {
 }
 
 
-const NewProduct = ({className}) => {
+const NewProduct = ({ className }) => {
   let [loading, setLoading] = useState(true)
   const settings = {
     dots: false,

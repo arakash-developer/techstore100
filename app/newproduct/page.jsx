@@ -105,10 +105,9 @@ const NewProduct = () => {
 
     
 
-      {
-        loading &&
+    
         <div className='my-5'>
-          <Container className='max-w-[1404px]'>
+          <Container className='max-w-[1404px] '>
             <Slider {...settings}>
               <Item2 className='w-full px-[1px]'/>
               <Item2 className='w-full px-[1px]'/>
@@ -119,7 +118,7 @@ const NewProduct = () => {
             </Slider>
           </Container>
         </div>
-      }
+
       {
         !loading &&
         <div className='my-5'>

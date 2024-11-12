@@ -43,7 +43,7 @@ const NewProduct = ({ className }) => {
     arrows: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 30000,
+    autoplaySpeed: 20000,
     slidesToShow: 6,
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow check={`${loading ? "!hidden" : "!flex"}`} />,

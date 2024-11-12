@@ -27,6 +27,13 @@ export async function generateMetadata({ params }) {
     }
 }
 
+export async function generateStaticParams(){
+    let res = await getAllData();
+    return res.map((item) => ({
+        id: item.id 
+      })).slice(0,2)
+}
+
 const page = async ({ params }) => {
     const { id } = await params;
     let res = await getAllData();

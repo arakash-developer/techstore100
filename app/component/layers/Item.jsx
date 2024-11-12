@@ -33,8 +33,8 @@ const Item = ({className,id,title,image,price}) => {
         <h1 className='font-normal text-[0.81rem] text-[var(--color---7)] h-16 overflow-hidden'>
           {title.substr(0,57)+"..."}
         </h1>
-        <del className='font-normal text-sm leading-[140%] text-[var(--color---10)] mt-2'>$499.00</del>
-        <h2 className='font-semibold text-lg leading-[140%] text-[var(--color---7)] pb-3'>{price}</h2>
+        <del className='font-normal text-sm leading-[140%] text-[var(--color---10)] mt-2'>${price}</del>
+        <h2 className='font-semibold text-lg leading-[140%] text-[var(--color---7)] pb-3'>${price}</h2>
       </div>
     </div>
   )

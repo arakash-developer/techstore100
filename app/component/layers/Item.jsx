@@ -8,7 +8,7 @@ import { IoIosStar } from "react-icons/io";
 
 
 
-const Item = ({className,id,title,image}) => {
+const Item = ({className,id,title,image,price}) => {
   const router = useRouter()
   return (
     <div className={`${className} w-[234px] h-[372px] bg-[var(--color---12)]`}>
@@ -34,7 +34,7 @@ const Item = ({className,id,title,image}) => {
           {title.substr(0,57)+"..."}
         </h1>
         <del className='font-normal text-sm leading-[140%] text-[var(--color---10)] mt-2'>$499.00</del>
-        <h2 className='font-semibold text-lg leading-[140%] text-[var(--color---7)] pb-3'>$499.00</h2>
+        <h2 className='font-semibold text-lg leading-[140%] text-[var(--color---7)] pb-3'>{price}</h2>
       </div>
     </div>
   )

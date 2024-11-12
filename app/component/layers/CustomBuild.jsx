@@ -112,6 +112,7 @@ const NewProduct = ({ className }) => {
                                                 id={item.id}
                                                 title={item.title}
                                                 image={item.thumbnail}
+                                                price={item.price}
                                             />
                                         ))
                                     }

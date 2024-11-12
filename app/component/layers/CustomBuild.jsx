@@ -113,6 +113,7 @@ const NewProduct = ({ className }) => {
                                                 title={item.title}
                                                 image={item.thumbnail}
                                                 price={item.price}
+                                                discountPercentage={item.discountPercentage}
                                             />
                                         ))
                                     }

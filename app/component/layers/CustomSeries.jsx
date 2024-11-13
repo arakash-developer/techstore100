@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 
 
-const NewProduct = ({ className }) => {
+const CustomSeries = ({ className,seriesImage,seriesTitle,seriesLink }) => {
     let [loading, setLoading] = useState(true)
     const settings = {
         dots: false,
@@ -99,10 +99,10 @@ const NewProduct = ({ className }) => {
                     {
                         !loading &&
                         <div className="grid grid-cols-12 h-[372px] items-start w-full">
-                            <div className="xsm:w-[234px] h-[372px] bg-custombuild bg-no-repeat bg-cover bg-center lg:col-span-2 md:col-span-3 sm:col-span-4 xsm:col-span-6 col-span-12">
+                            <div className={`xsm:w-[234px] h-[372px] ${seriesImage} bg-no-repeat bg-cover bg-center lg:col-span-2 md:col-span-3 sm:col-span-4 xsm:col-span-6 col-span-12`}>
                                 <div className="pt-[151px] pb-9">
-                                    <h3 className='max-w-[150px] mx-auto capitalize font-bold text-[1.38rem] leading-[130%] text-center text-[var(--color---12)]'>custom builds</h3>
-                                    <Link href='#' className='mt-[100px] block capitalize font-normal text-[0.81rem] underline leading-[115%] text-center text-[#fff]'>See All Products</Link>
+                                    <h3 className='max-w-[100px] mx-auto capitalize font-bold text-[1.38rem] leading-[130%] text-center text-[var(--color---12)]'>{seriesTitle}</h3>
+                                    <Link href={seriesLink} className='mt-[100px] block capitalize font-normal text-[0.81rem] underline leading-[115%] text-center text-[#fff]'>See All Products</Link>
                                 </div>
                             </div>
                             <div className="w-full h-full bg-[var(--color---12)] md:col-span-9 lg:col-span-10 sm:col-span-8 xsm:col-span-6 hidden xsm:block">
@@ -132,4 +132,4 @@ const NewProduct = ({ className }) => {
     )
 }
 
-export default NewProduct
+export default CustomSeries

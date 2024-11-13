@@ -19,6 +19,9 @@ module.exports = {
       },
       backgroundImage: {
         custombuild: "url('/custombuild.png')",
+        msiseries: "url('/msiseries.png')",
+        msidesktop: "url('/msidesktop.png')",
+        gamingmonitor: "url('/gamingmonitor.png')",
       },
     },
   },

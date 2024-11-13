@@ -11,15 +11,10 @@ import { decrement, increment } from '@/app/lib/features/prevent/PreventSlice'
 
 const Item = ({ className, id, title, image, price, discountPercentage }) => {
   const router = useRouter()
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
   const handlerGo = () => {
     router.push(`/products/details/${id}`)
-    dispatch(increment(1))
   }
-  const loading = useSelector((state) => {
-    return state.prevent
-  })
-  console.log(loading);
   
   return (
     <div className={`${className} w-[234px] h-[372px] bg-[var(--color---12)]`}>

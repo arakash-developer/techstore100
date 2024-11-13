@@ -6,13 +6,25 @@ const Blogs = () => {
     return (
         <>
             <Container>
-                <div className="flex justify-between bg-yellow-200">
-                    <BlogItem />
-                    <BlogItem />
-                    <BlogItem />
-                    <BlogItem />
-                    <BlogItem />
-                    <BlogItem />
+                <div className="grid grid-cols-12 gap-y-5 w-full bg-yellow-200">
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
+                    <BlogItem className='col-span-2' />
                 </div>
             </Container>
         </>

@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import CustomBuild from '@/public/custombuild.png'
+import CustomBuilda from '../../../public/custombuild.png'
 import Image from 'next/image'
 import CustomScleton from './CustomScleton'
 import { CustomScletonOne } from './CustomScleton'
@@ -98,8 +99,8 @@ const NewProduct = ({ className }) => {
                     {
                         !loading &&
                         <div className="grid grid-cols-12 h-[372px] items-start w-full">
-                            <div className="xsm:w-[234px] h-[372px] lg:col-span-2 md:col-span-3 sm:col-span-4 xsm:col-span-6 col-span-12">
-                                <Image className='h-full w-full object-cover' src={CustomBuild} alt={CustomBuild} />
+                            <div className="xsm:w-[234px] h-[372px] bg-custombuild bg-no-repeat bg-cover bg-center lg:col-span-2 md:col-span-3 sm:col-span-4 xsm:col-span-6 col-span-12">
+                                {/* <Image className='h-full w-full object-cover' src={CustomBuilda} alt={CustomBuild} /> */}
                             </div>
                             <div className="w-full h-full bg-[var(--color---12)] md:col-span-9 lg:col-span-10 sm:col-span-8 xsm:col-span-6 hidden xsm:block">
 

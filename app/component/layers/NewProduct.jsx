@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Container from './Container'
 import Item from './Item'
 import Item2 from './Item2'
@@ -8,11 +8,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Contex } from '@/app/lib/context/TechContex'
 
 
 
 function SampleNextArrow(props) {
   const { check, style, onClick } = props;
+  let { setPage, page, setLimit, limit } = useContext(Contex)
+  let setPagefn = (page, setPage) => {
+    setPage(page + 1)
+    console.log(page);
+  }
+  useEffect(() => {
+    setPagefn(page, setPage)
+  }, [])
   return (
     <div
       className={`${check} absolute right-[1px] top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-none w-9 h-12 bg-[var(--color---18)] justify-center items-center rounded-l-[30px]`}
@@ -87,19 +96,16 @@ const NewProduct = ({ className }) => {
     ]
   }
   let [allproducts, setAllProducts] = useState([])
+  let { page, limit } = useContext(Contex)
 
-
-  let getdata = async () => {
-    const blops = await fetch("https://akashtechstore.onrender.com/products")
+  let getdata = async (page, limit) => {
+    const blops = await fetch(`https://akashtechstore.onrender.com/products?_page=${page}&_limit=${limit}`)
     let res = await blops.json()
     setAllProducts(res)
     setLoading(false)
-    // console.log(res);
-
   }
-
   useEffect(() => {
-    getdata()
+    getdata(page, limit)
   }, [])
 
   return (

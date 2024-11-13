@@ -6,7 +6,7 @@ import Zip from './component/layers/Zip';
 import CustomSeriesTitle from './component/layers/CustomSeriesTitle';
 import CustomSeries from './component/layers/CustomSeries';
 import Brands from './component/layers/Brands';
-import Blogs from './component/layers/Blogs'
+// import Blogs from './component/layers/Blogs'
 
 const page = () => {
 
@@ -44,7 +44,7 @@ const page = () => {
         seriesLink='#'
       />
       <Brands className='mt-[66px] mb-[78px]'/>
-      <Blogs />
+      {/* <Blogs /> */}
     </>
   )
 }

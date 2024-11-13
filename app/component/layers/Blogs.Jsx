@@ -6,7 +6,7 @@ const Blogs = () => {
     return (
         <>
             <Container>
-                <div className="flex justify-between">
+                <div className="flex justify-between bg-yellow-200">
                     <BlogItem />
                     <BlogItem />
                     <BlogItem />

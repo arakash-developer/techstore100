@@ -6,6 +6,7 @@ import Zip from './component/layers/Zip';
 import CustomSeriesTitle from './component/layers/CustomSeriesTitle';
 import CustomSeries from './component/layers/CustomSeries';
 import Brands from './component/layers/Brands';
+import Blogs from '@/app/component/layers/Blogs'
 
 const page = () => {
 
@@ -37,12 +38,13 @@ const page = () => {
         seriesTitle='MSI Desktops'
         seriesLink='#'
       />
-      <CustomSeries className='mb-5'
+      <CustomSeries
         seriesImage='bg-gamingmonitor'
         seriesTitle='Gaming Monitors'
         seriesLink='#'
       />
-      <Brands />
+      <Brands className='mt-[66px] mb-[78px]'/>
+      <Blogs />
     </>
   )
 }

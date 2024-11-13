@@ -9,10 +9,10 @@ import Hp from '@/public/brands/hp.png'
 import Gi from '@/public/brands/gi.png'
 import Container from './Container'
 
-const Brands = () => {
+const Brands = ({className}) => {
     return (
-        <Container>
-            <div className='flex justify-between items-center'>
+        <Container className={className}>
+            <div className='flex justify-between items-center flex-wrap gap-y-5'>
                 <Image src={Rd} alt={Rd} />
                 <Image src={Msi} alt={Msi} />
                 <Image src={Ra} alt={Ra} />

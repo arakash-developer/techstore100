@@ -14,21 +14,19 @@ import { Contex } from '@/app/lib/context/TechContex'
 
 function SampleNextArrow(props) {
   const { check, style, onClick } = props;
-  let { setPage, page, setLimit, limit } = useContext(Contex)
-  let setPagefn = (page, setPage) => {
+  let { page, setPage } = useContext(Contex)
+  let handlerNext = () => {
     setPage(page + 1)
-    console.log(page);
   }
-  useEffect(() => {
-    setPagefn(page, setPage)
-  }, [])
   return (
     <div
-      className={`${check} absolute right-[1px] top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-none w-9 h-12 bg-[var(--color---18)] justify-center items-center rounded-l-[30px]`}
+      className={`${check} absolute right-[1px] top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-none w-9 h-12 bg-[var(--color---18)] justify-center items-center rounded-l-[30px] overflow-hidden`}
       style={{ ...style }}
       onClick={onClick}
     >
-      <MdOutlineKeyboardArrowRight className='text-[var(--color---12)] text-[20px]' />
+      <div onClick={handlerNext} className="w-full h-full flex justify-center items-center">
+        <MdOutlineKeyboardArrowRight className='text-[var(--color---12)] text-[20px]' />
+      </div>
     </div>
   );
 }
@@ -101,12 +99,14 @@ const NewProduct = ({ className }) => {
   let getdata = async (page, limit) => {
     const blops = await fetch(`https://akashtechstore.onrender.com/products?_page=${page}&_limit=${limit}`)
     let res = await blops.json()
-    setAllProducts(res)
-    setLoading(false)
+    if (res.length > 0) {
+      setAllProducts(res)
+      setLoading(false)
+    }
   }
   useEffect(() => {
     getdata(page, limit)
-  }, [])
+  }, [page])
 
   return (
     <main>

@@ -16,7 +16,7 @@ function SampleNextArrow(props) {
   const { check, style, onClick } = props;
   let { page, setPage } = useContext(Contex)
   let handlerNext = () => {
-    setPage(page + 1)
+    setPage((prev) => (prev + 1))
   }
   return (
     <div
@@ -100,7 +100,7 @@ const NewProduct = ({ className }) => {
     const blops = await fetch(`https://akashtechstore.onrender.com/products?_page=${page}&_limit=${limit}`)
     let res = await blops.json()
     if (res.length > 0) {
-      setAllProducts(res)
+      setAllProducts((prev) => ([...prev, ...res]))
       setLoading(false)
     }
   }

@@ -1,5 +1,6 @@
 import Container from '@/app/component/layers/Container';
 import PreviewImage from '@/app/component/layers/PreviewImage';
+import singleData from '@/app/lib/singleData';
 import getAllData from '@/app/lib/getAllData';
 import Image from 'next/image';
 import React from 'react'
@@ -27,32 +28,35 @@ export async function generateMetadata({ params }) {
     }
 }
 
-export async function generateStaticParams(){
+export async function generateStaticParams() {
     let res = await getAllData();
     return res.map((item) => ({
-        id: item.id 
-      })).slice(0,2)
+        id: item.id
+    })).slice(0, 6)
 }
 
 const page = async ({ params }) => {
     const { id } = await params;
-    let res = await getAllData();
-    let newdata = res.filter((item) => (item.id == id))
-    let Allcomments = newdata.map((item) => {
-        return item.reviews
-    })
+    let res = await singleData(id);
+    // let newdata = res.filter((item) => (item.id == id))
+    // let Allcomments = res.map((item) => {
+    //     return item.reviews
+    // })
+    // console.log(res);
+
     return (
         <Container>
-            <PreviewImage newdata={newdata} />
+            {/* <PreviewImage newdata={res} /> */}
 
-            {
+            {/* {
                 Allcomments[0].map((item, index) => (
                     <div key={index} className="">
                         <h2>{item.id}</h2>
                         <h2>{item.comment}</h2>
                     </div>
                 ))
-            }
+            } */}
+            <h1>{res.title}</h1>
         </Container>
     )
 }

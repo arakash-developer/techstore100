@@ -1,5 +1,5 @@
 const getAllData = async (id) => {
-    const blops = await fetch("https://akashtechstore.onrender.com/products",
+    const blops = await fetch(`https://akashtechstore.onrender.com/products/${id}`,
         {
             cache:"force-cache",
             // cache:"no-store",

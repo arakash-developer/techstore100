@@ -10,7 +10,7 @@ import { ShimmerText } from "react-shimmer-effects";
 
 const Item2 = ({ className }) => {
     return (
-        <div className={`${className} w-[234px] min-h-[360px] bg-[var(--color---12)] relative`}>
+        <div className={`${className} w-[234px] h-[360px] bg-[var(--color---12)] relative`}>
             <div className="w-full h-full px-6  bg-[var(--color--12)] absolute">
                 <div className="absolute left-2 top-4 h-5 w-[40%] overflow-hidden">
                 <ShimmerTitle line={1} gap={10} variant="secondary" />

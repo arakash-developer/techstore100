@@ -15,19 +15,18 @@ import { Contex } from '@/app/lib/context/TechContex'
 function SampleNextArrow(props) {
   const { check, style, onClick } = props;
   let { page, setPage } = useContext(Contex)
-  let handlerNext = () => {
+  let onClickMe = () => {
     setPage((prev) => (prev + 1))
+    onClick()
   }
   return (
-    <div
-      className={`${check} absolute right-[1px] top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-none w-9 h-12 bg-[var(--color---18)] justify-center items-center rounded-l-[30px] overflow-hidden`}
-      style={{ ...style }}
-      onClick={onClick}
-    >
-      <div onClick={handlerNext} className="w-full h-full flex justify-center items-center">
+      <div
+        className={`${check} absolute right-[1px] top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-none w-9 h-12 bg-[var(--color---18)] justify-center items-center rounded-l-[30px] overflow-hidden`}
+        style={{ ...style }}
+        onClick={onClickMe}
+      >
         <MdOutlineKeyboardArrowRight className='text-[var(--color---12)] text-[20px]' />
       </div>
-    </div>
   );
 }
 function SamplePrevArrow(props) {
@@ -100,7 +99,7 @@ const NewProduct = ({ className }) => {
     const blops = await fetch(`https://akashtechstore.onrender.com/products?_page=${page}&_limit=${limit}`)
     let res = await blops.json()
     if (res.length > 0) {
-      setAllProducts((prev) => ([...prev, ...res]))
+      setAllProducts((prev) => ([...prev,...res]))
       setLoading(false)
     }
   }
@@ -111,7 +110,7 @@ const NewProduct = ({ className }) => {
   return (
     <main>
       <div className={`${className}`}>
-        <Container className='max-w-[1404px]'>
+        <Container className='max-w-[1404px] h-[360px] overflow-y-hidden'>
           {
             loading &&
             <Slider {...settings}>

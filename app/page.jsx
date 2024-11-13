@@ -5,6 +5,7 @@ import CustomBuild from './component/layers/CustomBuild';
 import Zip from './component/layers/Zip';
 import CustomSeriesTitle from './component/layers/CustomSeriesTitle';
 import CustomSeries from './component/layers/CustomSeries';
+import Brands from './component/layers/Brands';
 
 const page = () => {
 
@@ -41,6 +42,7 @@ const page = () => {
         seriesTitle='Gaming Monitors'
         seriesLink='#'
       />
+      <Brands />
     </>
   )
 }

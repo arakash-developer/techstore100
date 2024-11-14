@@ -21,7 +21,7 @@ function SampleNextArrow(props) {
   }
   return (
     <div
-      className={`${check} absolute right-[1px] !top-1/2 -!translate-y-1/2 z-10 cursor-pointer rounded-none w-9 h-12 bg-[var(--color---18)] justify-center items-center rounded-l-[30px] overflow-hidden`}
+      className={`${check} absolute right-[1px] top-1/2 -translate-y-1/2 z-10 cursor-pointer rounded-none w-9 h-12 bg-[var(--color---18)] justify-center items-center rounded-l-[30px] overflow-hidden`}
       style={{ ...style }}
       onClick={onClickMe}
     >

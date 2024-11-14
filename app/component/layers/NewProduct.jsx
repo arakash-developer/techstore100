@@ -110,7 +110,7 @@ const NewProduct = ({ className }) => {
   return (
     <main>
       <div className={`${className}`}>
-        <Container className='max-w-[1404px] h-[360px] overflow-y-hidden'>
+        <Container className='max-w-[1404px] h-[372px] overflow-y-hidden'>
           {
             loading &&
             <Slider {...settings}>

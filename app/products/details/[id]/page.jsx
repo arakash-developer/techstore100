@@ -32,7 +32,7 @@ export async function generateStaticParams() {
     let res = await getAllData();
     return res.map((item) => ({
         id: item.id
-    })).slice(0, 6)
+    })).slice(0, 8)
 }
 
 const page = async ({ params }) => {

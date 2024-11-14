@@ -24,7 +24,7 @@ const Item = ({ className, id, title, image, price, discountPercentage }) => {
           <p className='capitalize font-normal text-[0.63rem] leading-[210%] text-[var(--color---9)]'>in stock</p>
         </div>
         <div className="w-full h-[150px] flex justify-center">
-          <Image className='w-[150px] h-full object-cover' width='150' height='150' src={image} alt={Product1} />
+          <Image className='w-[150px] h-full object-cover' width={1000} height={1000}  src={image} alt={Product1} />
         </div>
         <div className="flex gap-x-2 items-center my-1">
           <div className="flex gap-x-[2px] items-center">

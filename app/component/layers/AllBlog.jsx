@@ -6,7 +6,8 @@ const AllBlog = () => {
   return (
     <>
         <Container>
-    <div className="grid grid-cols-12 gap-x-2 gap-y-5 w-full bg-lime-400">
+          <h2 className='font-semibold text-[1.38rem] leading-7 mb-6 text-[var(--color---7)]'>Follow us on Instagram for News, Offers & More</h2>
+    <div className="grid grid-cols-12 gap-x-2 gap-y-5 w-full ">
         <BlogItem className='' />
         <BlogItem className='' />
         <BlogItem className='' />

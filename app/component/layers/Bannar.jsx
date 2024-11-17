@@ -54,22 +54,22 @@ const Bannar = () => {
         <div className="slider-container">
           <Slider {...settings}>
             <div>
-              <Image className='min-h-[220px] xl:h-[328px]' src={Bannar1} alt={Bannar1} />
+              <Image className='min-h-[150px] xl:h-[328px]' src={Bannar1} alt={Bannar1} />
             </div>
             <div>
-              <Image className='min-h-[220px] xl:h-[328px]' src={Bannar2} alt={Bannar1} />
+              <Image className='min-h-[150px] xl:h-[328px]' src={Bannar2} alt={Bannar1} />
             </div>
             <div>
-              <Image className='min-h-[220px] xl:h-[328px]' src={Bannar3} alt={Bannar1} />
+              <Image className='min-h-[150px] xl:h-[328px]' src={Bannar3} alt={Bannar1} />
             </div>
             <div>
-              <Image className='min-h-[220px] xl:h-[328px]' src={Bannar1} alt={Bannar1} />
+              <Image className='min-h-[150px] xl:h-[328px]' src={Bannar1} alt={Bannar1} />
             </div>
             <div>
-              <Image className='min-h-[220px] xl:h-[328px]' src={Bannar2} alt={Bannar1} />
+              <Image className='min-h-[150px] xl:h-[328px]' src={Bannar2} alt={Bannar1} />
             </div>
             <div>
-              <Image className='min-h-[220px] xl:h-[328px]' src={Bannar3} alt={Bannar1} />
+              <Image className='min-h-[150px] xl:h-[328px]' src={Bannar3} alt={Bannar1} />
             </div>
           </Slider>
         </div>

@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${popins.className}`}>
+      <body className={`${popins.className} overflow-x-hidden`}>
         <StoreProvider>
             <Navbar />
               {children}

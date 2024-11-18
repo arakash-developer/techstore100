@@ -7,6 +7,7 @@ import React from 'react'
 import Link from 'next/link';
 import { FaAngleUp } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
+import Paypal from '@/public/pay.png'
 
 
 
@@ -64,14 +65,26 @@ const page = async ({ params }) => {
                         <div className="rounded-md w-16 h-12 bg-[var(--color---1)] flex justify-center items-center">
                             <h4 className='font-semibold text-[0.81rem] w-[45%] leading-[210%] text-center text-[var(--color---7)]'>1</h4>
                             <div className="flex flex-col gap-y-1 justify-center text-[14px] w-[45%] cursor-pointer">
-                                <FaAngleUp className='w-full'/>
-                                <FaAngleDown className='w-full'/>
+                                <FaAngleUp className='w-full hover:bg-[var(--color---3)] hover:text-[var(--color---12)]' />
+                                <FaAngleDown className='w-full hover:bg-[var(--color---3)] hover:text-[var(--color---12)]' />
                             </div>
                         </div>
-                        <div className=""></div>
+                        <Link href='#' className='font-semibold text-sm text-center text-[#fff] inline-block py-5 px-10 bg-[var(--color---3)] rounded-full'>Add to Cart</Link>
+                        <Link className='inline-block py-5 px-10 bg-[var(--color---13)] rounded-full' href='#'>
+                            <Image src={Paypal} alt={Paypal} />
+                        </Link>
                     </div>
                 </Container>
             </div>
+            <Container className="flex">
+                <div className="w-1/2 pt-[67px] pb-[58px] bg-[var(--color---1)]">
+                    <p>Home  ›  Laptops  ›  MSI WS Series</p>
+                    <h1>MSI MPG Trident 3</h1>
+                    <h3>Be the first to review this product</h3>
+                    <p>MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop</p>
+                </div>
+                <div className="w-1/2 pt-[67px] pb-[58px] bg-lime-300">b</div>
+            </Container>
             {/* <PreviewImage newdata={res} /> */}
 
             {/* {
@@ -82,7 +95,7 @@ const page = async ({ params }) => {
                     </div>
                     ))
                     } */}
-            <h1>{res.title}</h1>
+            {/* <h1>{res.title}</h1> */}
         </>
     )
 }

@@ -22,6 +22,7 @@
 	--color---18: #25293180;
 	--color---19: #E9A426;
 	--color---20: #838383;
+	--color---21: rgba(0, 0, 0, 20%);
 }
 *{
 	box-sizing: border-box;
@@ -40,4 +41,10 @@
 }
 .bgcolor:hover{
 	border-color:var(--color---6);
+}
+.un_active{
+	@apply inline-block relative
+}
+.un_active::before{
+	@apply h-[2px] rounded-full content-[''] w-full bg-[--color---3] absolute left-0 top-full 
 }

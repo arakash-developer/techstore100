@@ -4,6 +4,12 @@ import singleData from '@/app/lib/singleData';
 import getAllData from '@/app/lib/getAllData';
 import Image from 'next/image';
 import React from 'react'
+import Link from 'next/link';
+import { FaAngleUp } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa";
+
+
+
 
 export async function generateMetadata({ params }) {
     const { id } = await params;
@@ -45,19 +51,39 @@ const page = async ({ params }) => {
     // console.log(res);
 
     return (
-        <Container>
+        <>
+            <div className="top py-[26px] border-b border-[var(--color---21)]">
+                <Container className='flex justify-between items-center'>
+                    <div className="flex gap-x-8 items-center">
+                        <Link className='un_active' href='#'>About Product</Link>
+                        <Link href='#'>Details</Link>
+                        <Link href='#'>Specs</Link>
+                    </div>
+                    <div className="flex gap-x-4 items-center">
+                        <p className='font-normal text-sm text-center text-[var(--color---7)]'>On Sale from<span className='font-semibold'> $3,299.00</span></p>
+                        <div className="rounded-md w-16 h-12 bg-[var(--color---1)] flex justify-center items-center">
+                            <h4 className='font-semibold text-[0.81rem] w-[45%] leading-[210%] text-center text-[var(--color---7)]'>1</h4>
+                            <div className="flex flex-col gap-y-1 justify-center text-[14px] w-[45%] cursor-pointer">
+                                <FaAngleUp className='w-full'/>
+                                <FaAngleDown className='w-full'/>
+                            </div>
+                        </div>
+                        <div className=""></div>
+                    </div>
+                </Container>
+            </div>
             {/* <PreviewImage newdata={res} /> */}
 
             {/* {
                 Allcomments[0].map((item, index) => (
                     <div key={index} className="">
-                        <h2>{item.id}</h2>
-                        <h2>{item.comment}</h2>
+                    <h2>{item.id}</h2>
+                    <h2>{item.comment}</h2>
                     </div>
-                ))
-            } */}
+                    ))
+                    } */}
             <h1>{res.title}</h1>
-        </Container>
+        </>
     )
 }
 

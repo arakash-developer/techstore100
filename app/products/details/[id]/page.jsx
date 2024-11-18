@@ -76,6 +76,11 @@ const page = async ({ params }) => {
                     </div>
                 </Container>
             </div>
+            <div className="my-5 h-96 flex">
+                <div className="bg-red-300 h-full w-1/2 mr-auto"></div>
+                <div className="bg-lime-300 h-full w-1/2"></div>
+            </div>
+{/*             
             <Container className="flex">
                 <div className="w-1/2 pt-[67px] pb-[58px] bg-[var(--color---1)]">
                     <p>Home  ›  Laptops  ›  MSI WS Series</p>
@@ -84,7 +89,7 @@ const page = async ({ params }) => {
                     <p>MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop</p>
                 </div>
                 <div className="w-1/2 pt-[67px] pb-[58px] bg-lime-300">b</div>
-            </Container>
+            </Container> */}
             {/* <PreviewImage newdata={res} /> */}
 
             {/* {

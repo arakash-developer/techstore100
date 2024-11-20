@@ -76,9 +76,9 @@ const page = async ({ params }) => {
                     </div>
                 </Container>
             </div>
-            <div className="my-5 h-96 flex">
-                <div className="bg-red-300 h-full w-1/2 mr-auto"></div>
-                <div className="bg-lime-300 h-full w-1/2"></div>
+            <div className="my-5 h-96 flex max-w-[50%] mr-auto">
+                <div className="bg-red-300 h-full w-full"></div>
+                {/* <div className="bg-lime-300 h-full w-1/2"></div> */}
             </div>
 {/*             
             <Container className="flex">

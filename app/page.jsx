@@ -1,15 +1,14 @@
 import React from 'react'
-import Bannar from './component/layers/Bannar';
-import NewProduct from './component/layers/NewProduct';
-import CustomBuild from './component/layers/CustomBuild';
-import Zip from './component/layers/Zip';
-import CustomSeriesTitle from './component/layers/CustomSeriesTitle';
-import CustomSeries from './component/layers/CustomSeries';
-import Brands from './component/layers/Brands';
+import Bannar from '@/app/component/layers/Bannar';
+import NewProduct from '@/app/component/layers/NewProduct';
+import CustomBuild from '@/app/component/layers/CustomBuild';
+import Zip from '@/app/component/layers/Zip';
+import CustomSeriesTitle from '@/app/component/layers/CustomSeriesTitle';
+import CustomSeries from '@/app/component/layers/CustomSeries';
+import Brands from '@/app/component/layers/Brands';
 import AllBlog from '@/app/component/layers/AllBlog'
 
 const page = () => {
-
   return (
     <>
       <Bannar />

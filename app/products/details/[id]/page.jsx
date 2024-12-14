@@ -11,7 +11,6 @@ import Paypal from '@/public/pay.png'
 
 
 
-
 export async function generateMetadata({ params }) {
     const { id } = await params;
     let res = await getAllData();

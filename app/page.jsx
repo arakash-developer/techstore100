@@ -7,6 +7,7 @@ import CustomSeriesTitle from '@/app/component/layers/CustomSeriesTitle';
 import CustomSeries from '@/app/component/layers/CustomSeries';
 import Brands from '@/app/component/layers/Brands';
 import AllBlog from '@/app/component/layers/AllBlog'
+import TestiMonial from '@/app/component/layers/TestiMonial';
 
 const page = () => {
   return (
@@ -44,6 +45,7 @@ const page = () => {
       />
       <Brands className='mt-[66px] mb-[78px]'/>
       <AllBlog />
+      <TestiMonial />
     </>
   )
 }

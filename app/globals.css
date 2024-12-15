@@ -3,48 +3,78 @@
 @tailwind utilities;
 
 :root {
-	--color---1: #f5f7ff;
-	--color---3: #0156ff;
-	--color---4: #01a4ff;
-	--color---5: #a2a6b0;
-	--color---6: #cacdd8;
-	--color---7: #000;
-	--color---8: #c94d3f;
-	--color---9: #78a962;
-	--color---10: #666;
-	--color---11: #020202;
-	--color---12: #fff;
-	--color---13: #FFB800;
-	--color---14: #020203;
-	--color---15: rgba(255, 255, 255, 0.5);
-	--color---16: rgba(255, 255, 255,0.2);
-	--color---17: rgba(255, 255, 255,0.6);
-	--color---18: #25293180;
-	--color---19: #E9A426;
-	--color---20: #838383;
-	--color---21: rgba(0, 0, 0, 20%);
+  --color---1: #f5f7ff;
+  --color---3: #0156ff;
+  --color---4: #01a4ff;
+  --color---5: #a2a6b0;
+  --color---6: #cacdd8;
+  --color---7: #000;
+  --color---8: #c94d3f;
+  --color---9: #78a962;
+  --color---10: #666;
+  --color---11: #020202;
+  --color---12: #fff;
+  --color---13: #ffb800;
+  --color---14: #020203;
+  --color---15: rgba(255, 255, 255, 0.5);
+  --color---16: rgba(255, 255, 255, 0.2);
+  --color---17: rgba(255, 255, 255, 0.6);
+  --color---18: #25293180;
+  --color---19: #e9a426;
+  --color---20: #838383;
+  --color---21: rgba(0, 0, 0, 20%);
 }
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-.searchbarMob{
-	@apply pl-36 py-2 pr-1 relative
+.searchbarMob {
+  @apply pl-36 py-2 pr-1 relative;
 }
-.searchbarMob input{
-	@apply w-full h-full absolute left-0 top-0  bg-yellow-400
+.searchbarMob input {
+  @apply w-full h-full absolute left-0 top-0  bg-yellow-400;
 }
-.cartbox-shad{
-	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.14);
+.cartbox-shad {
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.14);
 }
-.bgcolor{
-	@apply cursor-pointer box-border border border-solid border-[transparent] bg-[var(--color---1)]
+.bgcolor {
+  @apply cursor-pointer box-border border border-solid border-[transparent] bg-[var(--color---1)];
 }
-.bgcolor:hover{
-	border-color:var(--color---6);
+.bgcolor:hover {
+  border-color: var(--color---6);
 }
-.un_active{
-	@apply inline-block relative
+.un_active {
+  @apply inline-block relative;
 }
-.un_active::before{
-	@apply h-[2px] rounded-full content-[''] w-full bg-[--color---3] absolute left-0 top-full 
+.un_active::before {
+  @apply h-[2px] rounded-full content-[''] w-full bg-[--color---3] absolute left-0 top-full;
+}
+.testimonial {
+  @apply relative;
+}
+/* Style the container for the dots */
+.testimonial .slick-dots {
+  @apply !flex !justify-end gap-0 absolute -right-[6px] -bottom-[35%] p-0 m-0 list-none;
+}
+/* Style each dot */
+.testimonial .slick-dots li {
+  @apply mx-[0px] /* Space between dots */;
+}
+
+/* Style the default (inactive) dot */
+.slick-dots li button {
+  @apply !w-3 !h-3 block outline-none cursor-pointer !bg-[var(--color---6)] rounded-full transition-all duration-300 ease-in
+  /* transition: background-color 0.3s ease; Smooth transition; */;
+}
+.slick-dots li button::before {
+  opacity: 0 !important;
+}
+
+/* Style the active (selected) dot */
+.slick-dots li.slick-active button {
+  @apply !bg-[var(--color---3)] /* Light gray background */;
+}
+
+/* Style the dot on hover */
+.slick-dots li button:hover {
+  @apply !bg-[var(--color---4)]
 }

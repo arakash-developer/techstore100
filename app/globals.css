@@ -53,7 +53,7 @@
 }
 /* Style the container for the dots */
 .testimonial .slick-dots {
-  @apply !flex !justify-end gap-0 absolute -right-[6px] -bottom-[35%] p-0 m-0 list-none;
+  @apply !flex !justify-end gap-0 absolute -right-[4px] -bottom-[35%] p-0 m-0 list-none;
 }
 /* Style each dot */
 .testimonial .slick-dots li {

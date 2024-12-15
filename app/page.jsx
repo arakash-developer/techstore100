@@ -45,7 +45,7 @@ const page = () => {
       />
       <Brands className='mt-[66px] mb-[78px]'/>
       <AllBlog />
-      <TestiMonial />
+      <TestiMonial className="mt-[106px] mb-[57px]"/>
     </>
   )
 }

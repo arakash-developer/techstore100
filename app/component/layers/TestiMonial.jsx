@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import Container from "@/app/component/layers/Container";
 import Quote from "@/public/quote.png";
 
-const TestiMonial = () => {
+const TestiMonial = ({className}) => {
   var settings = {
     dots: true,
     infinite: true,
@@ -15,7 +15,7 @@ const TestiMonial = () => {
   };
   return (
     <div>
-      <Container className="testimonial max-w-[922px] mx-auto mt-[106px] mb-[57px]">
+      <Container className={`testimonial max-w-[922px] mx-auto ${className}`}>
         <Slider {...settings} className="h-full w-full slicks">
         <div className="box">
           <div className="flex gap-x-6 items-start">

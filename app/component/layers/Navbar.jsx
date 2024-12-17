@@ -57,8 +57,8 @@ const navbar = () => {
               <input type="text" className="w-full bg-[var(--color---1)] rounded-[32px] px-5 h-[60px] outline-[var(--color---3)]" placeholder="Search entiere store here..." />
             </div>
 
-            <ul className={`hidden flex-col lg:flex-row gap-y-2 lg:gap-x-6 xl:gap-x-[40px] gap-x-3 items-center bg-[var(--color---11)] lg:bg-transparent w-full lg:w-auto py-4 lg:py-0 absolute left-0 top-0 lg:static transition-all ${show ? "visible top-full flex" : "invisible lg:visible "} ${searchbar ? "lg:hidden" : "lg:flex"}`}>
-              <Li className='' liText='Laptops' to='/' />
+            <ul className={`hidden flex-col lg:flex-row gap-y-2 lg:gap-x-6 xl:gap-x-[40px] gap-x-3 items-center bg-[var(--color---11)] lg:bg-transparent w-full lg:w-auto py-4 lg:py-0 absolute left-0 top-0 lg:static transition-all cursor-pointer ${show ? "visible top-full flex" : "invisible lg:visible "} ${searchbar ? "lg:hidden" : "lg:flex"}`}>
+              <Li className='' liText='Laptops' to='/laptop' />
               <Li className='' liText='Desktop PCs' to='/' />
               <Li className='' liText='Networking Devices' to='/' />
               <Li className='' liText='Printers & Scanners' to='/' />

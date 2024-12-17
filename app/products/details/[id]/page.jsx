@@ -46,9 +46,9 @@ const page = async ({ params }) => {
     let res = await singleData(id);
     // let newdata = res.filter((item) => (item.id == id))
     // let Allcomments = res.map((item) => {
-    //     return item.reviews
+        // return item.reviews
     // })
-    // console.log(res);
+    console.log(res);
 
     return (
         <>

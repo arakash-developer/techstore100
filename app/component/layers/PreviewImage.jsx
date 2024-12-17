@@ -1,4 +1,5 @@
 "use client";
+import Cus from "@/public/custombuild.png";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -7,23 +8,31 @@ const PreviewImage = ({ newdata }) => {
   const handlePreviewImageChange = (previewImage) => {
     setPreview(previewImage);
   };
-
   return (
-    <div className="cursor-pointer">
-      <div className="flex">
-        <p>{newdata.title}</p>
-        {newdata.images?.map((image) => (
-          <div
-            className=""
-            onClick={() => handlePreviewImageChange(image)}
-          >
-            <Image src={image} alt="a" width="100" height="100" />
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-3">
-        <Image src={preview} alt="a" width="500" height="500" />
+    <div className="">
+      <div className="flex gap-8 items-start">
+        <div className="w-[468px] h-[468px] border ">
+          <Image
+            className="w-full h-full object-cover"
+            src={preview}
+            alt="a"
+            width="500"
+            height="500"
+          />
+        </div>
+        <div className="w-[81px] flex flex-col gap-2 cursor-pointer">
+          {newdata.images?.map((image) => (
+            <div key={newdata.id} className="" onClick={() => handlePreviewImageChange(image)}>
+              <Image
+                className="w-full h-[81px] object-cover border"
+                src={image}
+                alt="a"
+                width="100"
+                height="100"
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -23,6 +23,7 @@ module.exports = {
         msiseries: "url('/msiseries.png')",
         msidesktop: "url('/msidesktop.png')",
         gamingmonitor: "url('/gamingmonitor.png')",
+        details: "url('/detailsbg.png')",
       },
     },
   },

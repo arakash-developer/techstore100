@@ -1,23 +1,48 @@
-import Breadcumb from "@/app/component/layers/Breadcumb";
+"use client";
 import Container from "@/app/component/layers/Container";
-import PreviewImage from "@/app/component/layers/PreviewImage";
-import getAllData from "@/app/lib/getAllData";
-import singleData from "@/app/lib/singleData";
 import Paypal from "@/public/pay.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
-const Navbar = ({id}) => {
+const Navbar = ({ id }) => {
+  const router = useRouter();
+  let nav = [
+    {
+      id: 1,
+      title: "About Product",
+      url: `/products/details/${id}/`,
+    },
+    {
+      id: 2,
+      title: "Details",
+      url: `/products/details/${id}/details`,
+    },
+    {
+      id: 3,
+      title: "Specs",
+      url: `/products/details/${id}/specs`,
+    },
+  ];
   return (
     <div className="top py-[26px] border-b border-[var(--color---21)]">
       <Container className="flex justify-between items-center">
         <div className="flex gap-x-8 items-center">
-          <Link className="un_active" href={`/products/details/${id}/`}>
+          {/* <Link className="un_active" href={`/products/details/${id}/`}>
             About Product
           </Link>
           <Link href={`/products/details/${id}/details`}>Details</Link>
-          <Link href={`/products/details/${id}/specs`}>Specs</Link>
+          <Link href={`/products/details/${id}/specs`}>Specs</Link> */}
+          {nav.map(({ url, id, title }) => (
+            <Link
+              className={`${router.pathname == url ? "un_active" : ""}`}
+              key={id}
+              href={url}
+            >
+              {title}
+            </Link>
+          ))}
         </div>
         <div className="flex gap-x-4 items-center">
           <p className="font-normal text-sm text-center text-[var(--color---7)]">

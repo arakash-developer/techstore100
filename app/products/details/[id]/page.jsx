@@ -66,9 +66,9 @@ const page = async ({ params }) => {
                 {res.title}
               </h2>
               <div className="flex items-center gap-4 mt-11 mb-8 ">
-                <div className="w-8 h-8 rounded-full bg-[#4B4D4F] border-2 border-[#0156FF]"></div>
-                <div className="w-8 h-8 rounded-full bg-[#F2E9DC] border-2 border-[#0156FF]"></div>
-                <div className="w-8 h-8 rounded-full bg-[#EAE8EB] border-2 border-[#0156FF]"></div>
+                <div className="w-8 h-8 cursor-pointer rounded-full bg-[#4B4D4F] border-2 border-[#0156FF]"></div>
+                <div className="w-8 h-8 cursor-pointer rounded-full bg-[#F2E9DC] border-2 border-[#0156FF]"></div>
+                <div className="w-8 h-8 cursor-pointer rounded-full bg-[#EAE8EB] border-2 border-[#0156FF]"></div>
               </div>
               <p className="mb-[166px] font-semibold text-xs text-[var(--color---7)]">
                 Have a Question?
@@ -89,27 +89,6 @@ const page = async ({ params }) => {
           </p>
         </Container>
       </section>
-
-      {/*             
-            <Container className="flex">
-                <div className="w-1/2 pt-[67px] pb-[58px] bg-[var(--color---1)]">
-                    <p>Home  ›  Laptops  ›  MSI WS Series</p>
-                    <h1>MSI MPG Trident 3</h1>
-                    <h3>Be the first to review this product</h3>
-                    <p>MSI MPG Trident 3 10SC-005AU Intel i7 10700F, 2060 SUPER, 16GB RAM, 512GB SSD, 2TB HDD, Windows 10 Home, Gaming Keyboard and Mouse 3 Years Warranty Gaming Desktop</p>
-                </div>
-                <div className="w-1/2 pt-[67px] pb-[58px] bg-lime-300">b</div>
-            </Container> */}
-
-      {/* {
-                Allcomments[0].map((item, index) => (
-                    <div key={index} className="">
-                    <h2>{item.id}</h2>
-                    <h2>{item.comment}</h2>
-                    </div>
-                    ))
-                    } */}
-      {/* <h1>{res.title}</h1> */}
     </>
   );
 };

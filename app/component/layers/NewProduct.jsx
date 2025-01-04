@@ -95,11 +95,11 @@ const NewProduct = ({ className }) => {
   let [allproducts, setAllProducts] = useState([])
   let { page, limit } = useContext(Contex)
 
-  let getdata = async (page, limit) => {
+  let getdata = async (page,limit) => {
     const blops = await fetch(`https://akashtechstore.onrender.com/products?_page=${page}&_limit=${limit}`)
     let res = await blops.json()
     if (res.length > 0) {
-      setAllProducts((prev) => ([...prev, ...res]))
+      setAllProducts((prev) => ([...prev,...res]))
       setLoading(false)
     }
   }

@@ -49,7 +49,6 @@ const page = async ({ params }) => {
   // let Allcomments = res.map((item) => {
   // return item.reviews
   // })
-  console.log(res);
 
   return (
     <>

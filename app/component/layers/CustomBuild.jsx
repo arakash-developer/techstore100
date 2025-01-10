@@ -66,8 +66,9 @@ const NewProduct = ({ className }) => {
 
 
     let getdata = async () => {
-        const blops = await fetch("https://akashtechstore.onrender.com/products")
-        let res = await blops.json()
+        const response = await fetch("https://techstoreserver.vercel.app/products")
+        let blobs= await response.json()
+        let res = blobs.data
         setAllProducts(res)
         setLoading(false)
     }
@@ -111,9 +112,9 @@ const NewProduct = ({ className }) => {
                                     {
                                         allproducts?.map((item) => (
                                             <Item
-                                                key={item.id}
+                                                key={item._id}
                                                 className='w-full px-[1px]'
-                                                id={item.id}
+                                                id={item._id}
                                                 title={item.title}
                                                 image={item.thumbnail}
                                                 price={item.price}

@@ -1,5 +1,6 @@
 "use client";
 import { Contex } from "@/app/lib/context/TechContex";
+import getAllData from "@/app/lib/getAllData";
 import { useContext, useEffect, useState } from "react";
 import {
   MdOutlineKeyboardArrowLeft,
@@ -96,11 +97,8 @@ const NewProduct = ({ className }) => {
   let { page, limit } = useContext(Contex);
 
   let getdata = async (page, limit) => {
-    const blops = await fetch(
-      `https://techstoreserver.vercel.app/products?_page=${page}&_limit=${limit}`
-    );
-    let alldata = await blops.json();
-    let res = alldata.data;
+    let response = await getAllData(page, limit);
+    let res = response.data;
     if (res.length > 0) {
       setAllProducts((prev) => [...prev, ...res]);
       setLoading(false);

@@ -1,5 +1,5 @@
 const getAllData = async (id) => {
-    const blops = await fetch(`https://akashtechstore.onrender.com/products/${id}`,
+    const blops = await fetch(`https://techstoreserver.vercel.app/products/${id}`,
         {
             cache:"force-cache",
             // cache:"no-store",
@@ -11,7 +11,7 @@ const getAllData = async (id) => {
     if (!blops.ok) {
         throw new Error("There Was An Error Fething Data")
     } else {
-        return blops.json()
+        return blops.json().data
     }
 
     // returning promise

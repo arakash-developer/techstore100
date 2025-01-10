@@ -22,7 +22,7 @@ const PreviewImage = ({ newdata }) => {
         </div>
         <div className="w-[81px] flex flex-col gap-2 cursor-pointer">
           {newdata.images?.map((image) => (
-            <div key={newdata.id} className="" onClick={() => handlePreviewImageChange(image)}>
+            <div key={newdata._id} className="" onClick={() => handlePreviewImageChange(image)}>
               <Image
                 className="w-full h-[81px] object-cover border"
                 src={image}

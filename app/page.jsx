@@ -27,6 +27,8 @@ const page = () => {
         seriesImage='bg-msiseries'
         seriesTitle='MSI Laptops'
         seriesLink='#'
+        category="laptop" 
+        brand="msi"
       />
       <CustomSeriesTitle
         s1='MSI Infinute Series'

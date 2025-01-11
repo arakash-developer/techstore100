@@ -11,6 +11,7 @@ import CustomScleton from './CustomScleton'
 import { CustomScletonOne } from './CustomScleton'
 import Link from 'next/link';
 import getAllProducts from '@/app/lib/getallproducts';
+import getFilterProduct from '@/app/lib/getFilterProduct';
 
 
 
@@ -68,7 +69,7 @@ const CustomSeries = ({ className,seriesImage,seriesTitle,seriesLink }) => {
 
     let getdata = async () => {
         setLoading(true)
-        let blobs= await getAllProducts();
+        let blobs= await getFilterProduct();
         let res = blobs.data
         setAllProducts(res)
         setLoading(false)

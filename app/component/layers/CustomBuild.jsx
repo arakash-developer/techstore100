@@ -10,11 +10,11 @@ import Image from 'next/image'
 import CustomScleton from './CustomScleton'
 import { CustomScletonOne } from './CustomScleton'
 import Link from 'next/link';
-
+import getAllProducts from '@/app/lib/getallproducts';
 
 
 const NewProduct = ({ className }) => {
-    let [loading, setLoading] = useState(true)
+    let [loading, setLoading] = useState()
     const settings = {
         dots: false,
         arrows: false,
@@ -66,8 +66,8 @@ const NewProduct = ({ className }) => {
 
 
     let getdata = async () => {
-        const response = await fetch("https://techstoreserver.vercel.app/products")
-        let blobs= await response.json()
+        setLoading(true)
+        let blobs= await getAllProducts();
         let res = blobs.data
         setAllProducts(res)
         setLoading(false)

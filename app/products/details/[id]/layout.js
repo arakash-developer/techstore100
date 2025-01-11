@@ -6,8 +6,8 @@ export const metadata = {
     "TechStore is a tech eCommerce platform built with Next.js, Redux, and GSAP, delivering a fast, interactive, and responsive shopping experience. With smooth animations and efficient state management, TechStore offers an intuitive, engaging interface for tech enthusiasts—crafted by Atiqur Rahman Akash.",
 };
 
-export default  function RootLayout({ children, params }) {
-  const { id } =  params;
+export default async function RootLayout({ children, params }) {
+  const { id } = await  params;
   return (
     <>
       <Navbar id={id}/>

@@ -10,7 +10,7 @@ import Image from 'next/image'
 import CustomScleton from './CustomScleton'
 import { CustomScletonOne } from './CustomScleton'
 import Link from 'next/link';
-import getAllProducts from '@/app/lib/getallproducts';
+import getAllProducts from '@/app/lib/getAllProducts';
 
 
 const NewProduct = ({ className }) => {

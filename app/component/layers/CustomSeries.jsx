@@ -69,7 +69,7 @@ const CustomSeries = ({ className,seriesImage,seriesTitle,seriesLink }) => {
 
     let getdata = async () => {
         setLoading(true)
-        let blobs= await getFilterProduct();
+        let blobs= await getFilterProduct("laptop");
         let res = blobs.data
         setAllProducts(res)
         setLoading(false)

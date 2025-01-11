@@ -1,6 +1,6 @@
-const getFilterProduct = async () => {
+const getFilterProduct = async (category) => {
   const blops = await fetch(
-    `https://techstoreserver.vercel.app/products?category=laptop`,
+    `https://techstoreserver.vercel.app/products?category=${category}`,
     {
       cache: "force-cache",
       // cache:"no-store",

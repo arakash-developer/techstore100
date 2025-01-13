@@ -10,10 +10,10 @@ import Image from 'next/image'
 import CustomScleton from './CustomScleton'
 import { CustomScletonOne } from './CustomScleton'
 import Link from 'next/link';
-import getAllProducts from '@/app/lib/getAllProducts';
+import getFilterProduct from '@/app/lib/getFilterProduct';
 
 
-const NewProduct = ({ className }) => {
+const NewProduct = ({ className,brand="all",category="all" }) => {
     let [loading, setLoading] = useState()
     const settings = {
         dots: false,
@@ -67,7 +67,7 @@ const NewProduct = ({ className }) => {
 
     let getdata = async () => {
         setLoading(true)
-        let blobs= await getAllProducts();
+        let blobs= await getFilterProduct(category,brand);
         let res = blobs.data
         setAllProducts(res)
         setLoading(false)

@@ -45,11 +45,6 @@ const page = async ({ params }) => {
   const { id } = await params;
   let res = await getSingleData(id);
   
-  // let newdata = res.filter((item) => (item.id == id))
-  // let Allcomments = res.map((item) => {
-  // return item.reviews
-  // })
-
   return (
     <>
       <section className="details bg-details bg-cover bg-no-repeat bg-center py-[60px]">

@@ -15,7 +15,7 @@ const page = () => {
       <Bannar />
       <NewProduct className="my-5" />
       <Zip />
-      <CustomBuild className="my-5" category="pc" />
+      <CustomBuild className="my-5" category="pc" brand="amd" />
       <CustomSeriesTitle
         s1="MSI GS Series"
         s2="MSI GT Series"

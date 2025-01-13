@@ -29,22 +29,25 @@ const page = () => {
         seriesLink='#'
         category="laptop" 
         brand="msi"
-      />
+        />
       <CustomSeriesTitle
         s1='MSI Infinute Series'
         s2='MSI Triden'
         s3='MSI GL Series'
         s4='MSI Nightblade'
-      />
+        />
       <CustomSeries className='my-5'
         seriesImage='bg-msidesktop'
         seriesTitle='MSI Desktops'
         seriesLink='#'
-      />
+        category="desktop" 
+        brand="msi"
+        />
       <CustomSeries
         seriesImage='bg-gamingmonitor'
         seriesTitle='Gaming Monitors'
         seriesLink='#'
+        category="monitor" 
       />
       <Brands className='mt-[66px] mb-[78px]'/>
       <AllBlog />

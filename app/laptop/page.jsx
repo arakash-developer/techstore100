@@ -21,15 +21,15 @@ const page = () => {
         Laptops
         <span className="text-[var(--color---3)]">
           <MdOutlineKeyboardArrowRight className="inline-block" />
-        </span>{" "}
+        </span>
         Everyday Use Notebooks{" "}
         <span className="text-[var(--color---3)]">
           <MdOutlineKeyboardArrowRight className="inline-block" />
-        </span>{" "}
+        </span>
         MSI Prestige Series{" "}
         <span className="text-[var(--color---3)]">
           <MdOutlineKeyboardArrowRight className="inline-block" />
-        </span>{" "}
+        </span>
         <span className="text-[var(--color---5)]">MSI WS Series</span>
       </div>
       <h1 className="font-semibold text-4xl text-[var(--color---7)] mb-5">
@@ -86,7 +86,7 @@ const page = () => {
             </h3>
             <Link
               href="#"
-              className="mt-2 inline-block rounded-3xl py-2  px-[62px] border-2 border-[var(--color---5)] font-semibold text-sm text-center text-[var(--color---5)]"
+              className="mt-2 flex justify-center items-center rounded-3xl py-2 px-[62px] border-2 border-[var(--color---5)] font-semibold text-sm text-center text-[var(--color---5)]"
             >
               Clear Filter
             </Link>

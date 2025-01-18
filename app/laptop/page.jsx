@@ -224,27 +224,20 @@ const page = () => {
             </div>
           </div>
           {/* Color Section */}
-          {/* Color Section */}
+
+          {/* Filter Name Section */}
           <div className="py-4 px-[17px] bg-lime-400">
             <div className="mb-2 flex justify-between items-center">
               <h3 className="font-semibold text-sm text-[var(--color---7)]">
-                Color
+                Filter Name
               </h3>
-              <FaAngleUp className="text-[var(--color---7)]" />
+              <FaAngleDown className="text-[var(--color---7)]" />
             </div>
-            <div className="mt-4 flex gap-2 items-center">
-              <div className="rounded-full w-8 h-8 border-2 border-[var(--color---3)] flex items-center justify-center">
-                <div className="rounded-full w-6 h-6 bg-black cursor-pointer"></div>
-              </div>
-              <div className="rounded-full w-8 h-8 border-2 border-[var(--color---3)] flex items-center justify-center">
-                <div className="rounded-full w-6 h-6 bg-red-500 cursor-pointer"></div>
-              </div>
-              <div className="rounded-full w-8 h-8 border-2 border-[var(--color---3)] flex items-center justify-center">
-                <div className="rounded-full w-6 h-6 bg-blue-500 cursor-pointer"></div>
-              </div>
+            <div className="py-2 px-[45px] rounded-3xl bg-[var(--color---3)]">
+              <h3 className="font-semibold text-sm text-center leading-none text-[#fff] cursor-pointer">Apply Filters (2)</h3>
             </div>
           </div>
-          {/* Color Section */}
+          {/* Filter Name Section */}
         </div>
         <div className="right mt-1 bg-yellow-400 flex-1">ggg</div>
       </div>

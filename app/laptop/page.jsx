@@ -226,7 +226,7 @@ const page = () => {
           {/* Color Section */}
 
           {/* Filter Name Section */}
-          <div className="py-4 px-[17px] bg-lime-400">
+          <div className="py-4 px-[17px]">
             <div className="mb-2 flex justify-between items-center">
               <h3 className="font-semibold text-sm text-[var(--color---7)]">
                 Filter Name
@@ -238,6 +238,22 @@ const page = () => {
             </div>
           </div>
           {/* Filter Name Section */}
+
+          {/* Brand Section */}
+          <div className="py-4 px-[17px] bg-lime-400">
+            <div className="mb-2 flex justify-between items-center">
+              <h3 className="font-semibold text-sm text-[var(--color---7)]">
+                Brand
+              </h3>
+              <FaAngleDown className="text-[var(--color---7)]" />
+            </div>
+            <div className="py-2 px-[45px] rounded-3xl bg-[var(--color---3)]">
+              <h3 className="font-semibold text-sm text-center leading-none text-[#fff] cursor-pointer">Apply Filters (2)</h3>
+            </div>
+          </div>
+          {/* Brand Section */}
+
+     
         </div>
         <div className="right mt-1 bg-yellow-400 flex-1">ggg</div>
       </div>

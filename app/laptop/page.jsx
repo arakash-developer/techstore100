@@ -96,43 +96,114 @@ const page = () => {
           {/* Category Section */}
           <div className="py-4 px-[17px]">
             <div className="mb-2 flex justify-between items-center">
-              <h3 className="font-semibold text-sm text-[var(--color---7)]">Category</h3>
-              <FaAngleUp className="text-[var(--color---7)]" /> 
+              <h3 className="font-semibold text-sm text-[var(--color---7)]">
+                Category
+              </h3>
+              <FaAngleUp className="text-[var(--color---7)]" />
             </div>
             <div className="flex justify-between items-center">
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">CUSTOM PCS</h3>
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">15</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                CUSTOM PCS
+              </h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                15
+              </h3>
             </div>
             <div className="flex justify-between items-center">
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">MSI ALL-IN-ONE PCS</h3>
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">45</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                MSI ALL-IN-ONE PCS
+              </h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                45
+              </h3>
             </div>
             <div className="flex justify-between items-center">
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">HP/COMPAQ PCS</h3>
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">1</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                HP/COMPAQ PCS
+              </h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                1
+              </h3>
             </div>
           </div>
           {/* Category Section */}
-          {/* Category Section */}
+
+          {/* Price Section */}
           <div className="py-4 px-[17px] bg-lime-400">
             <div className="mb-2 flex justify-between items-center">
-              <h3 className="font-semibold text-sm text-[var(--color---7)]">Price</h3>
-              <FaAngleUp className="text-[var(--color---7)]" /> 
+              <h3 className="font-semibold text-sm text-[var(--color---7)]">
+                Price
+              </h3>
+              <FaAngleUp className="text-[var(--color---7)]" />
             </div>
             <div className="flex justify-between items-center">
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">$0.00 - $1,000.00</h3>
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">19</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                $0.00 - $1,000.00
+              </h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                19
+              </h3>
             </div>
             <div className="flex justify-between items-center">
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">MSI ALL-IN-ONE PCS</h3>
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">45</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                $1,000.00 - $2,000.00
+              </h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                21
+              </h3>
             </div>
             <div className="flex justify-between items-center">
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">HP/COMPAQ PCS</h3>
-              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">1</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                $2,000.00 - $3,000.00
+              </h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                9
+              </h3>
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                $3,000.00 - $4,000.00
+              </h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                6
+              </h3>
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                $4,000.00 - $5,000.00
+              </h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                3
+              </h3>
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                $5,000.00 - $6,000.00
+              </h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                1
+              </h3>
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                $6,000.00 - $7,000.00
+              </h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                1
+              </h3>
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                $7,000.00 And Above
+              </h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">
+                1
+              </h3>
             </div>
           </div>
-          {/* Category Section */}
+          {/* Price Section */}
+          
+          {/* Price Section */}
         </div>
         <div className="right mt-1 bg-yellow-400 flex-1">ggg</div>
       </div>

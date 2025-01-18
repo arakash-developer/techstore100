@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { CgMenuGridR } from "react-icons/cg";
-import { FaAngleDown, FaAngleLeft } from "react-icons/fa";
+import { FaAngleDown, FaAngleLeft, FaAngleUp } from "react-icons/fa";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const page = () => {
@@ -35,11 +35,12 @@ const page = () => {
       <h1 className="font-semibold text-4xl text-[var(--color---7)] mb-5">
         MSI WS Series
       </h1>
-      <div className="sort1 mb-10">
+
+      <div className="sort1">
         <div className="flex justify-between items-center h-[50px]">
           <div className="flex items-center gap-2 h-full">
             <Link
-              className="flex gap-1 justify-center items-center font-semibold text-sm text-[var(--color---7)] w-60 h-full cursor-pointer border border-[var(--color---6)] rounded-sm hover:border-[var(--color---3)]"    
+              className="flex gap-1 justify-center items-center font-semibold text-sm text-[var(--color---7)] w-[234px] h-full cursor-pointer border border-[var(--color---6)] rounded-sm hover:border-[var(--color---3)]"
               href="#"
             >
               <FaAngleLeft className="inline-block" />
@@ -74,6 +75,66 @@ const page = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="sort2 flex items-start gap-2 mb-10">
+        <div className="left w-[234px]">
+          {/* Filter Section */}
+          <div className="py-4 px-[17px]">
+            <h3 className="font-bold text-base text-center text-[var(--color---7)]">
+              Filter
+            </h3>
+            <Link
+              href="#"
+              className="mt-2 inline-block rounded-3xl py-2  px-[62px] border-2 border-[var(--color---5)] font-semibold text-sm text-center text-[var(--color---5)]"
+            >
+              Clear Filter
+            </Link>
+          </div>
+          {/* Filter Section */}
+
+          {/* Category Section */}
+          <div className="py-4 px-[17px]">
+            <div className="mb-2 flex justify-between items-center">
+              <h3 className="font-semibold text-sm text-[var(--color---7)]">Category</h3>
+              <FaAngleUp className="text-[var(--color---7)]" /> 
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">CUSTOM PCS</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">15</h3>
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">MSI ALL-IN-ONE PCS</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">45</h3>
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">HP/COMPAQ PCS</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">1</h3>
+            </div>
+          </div>
+          {/* Category Section */}
+          {/* Category Section */}
+          <div className="py-4 px-[17px] bg-lime-400">
+            <div className="mb-2 flex justify-between items-center">
+              <h3 className="font-semibold text-sm text-[var(--color---7)]">Price</h3>
+              <FaAngleUp className="text-[var(--color---7)]" /> 
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">$0.00 - $1,000.00</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">19</h3>
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">MSI ALL-IN-ONE PCS</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">45</h3>
+            </div>
+            <div className="flex justify-between items-center">
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">HP/COMPAQ PCS</h3>
+              <h3 className="font-normal text-[0.81rem] leading-[210%] text-[var(--color---7)]">1</h3>
+            </div>
+          </div>
+          {/* Category Section */}
+        </div>
+        <div className="right mt-1 bg-yellow-400 flex-1">ggg</div>
       </div>
     </Container>
   );

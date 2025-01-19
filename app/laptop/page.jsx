@@ -86,7 +86,7 @@ const page = () => {
             </h3>
             <Link
               href="#"
-              className="mt-2 flex justify-center items-center rounded-3xl py-2 px-[62px] border-2 border-[var(--color---5)] font-semibold text-sm text-center text-[var(--color---5)]"
+              className="mt-2 flex justify-center items-center rounded-3xl py-2 px-[59px] border-2 border-[var(--color---5)] font-semibold text-sm text-center text-[var(--color---5)]"
             >
               Clear Filter
             </Link>
@@ -234,7 +234,7 @@ const page = () => {
               <FaAngleDown className="text-[var(--color---7)]" />
             </div>
             <div className="py-2 px-[45px] rounded-3xl bg-[var(--color---3)]">
-              <h3 className="font-semibold text-sm text-center leading-none text-[#fff] cursor-pointer">Apply Filters (2)</h3>
+              <h3 className="font-semibold text-sm text-center leading-none text-[#fff] cursor-pointer">Apply Filters(2)</h3>
             </div>
           </div>
           {/* Filter Name Section */}
@@ -243,13 +243,16 @@ const page = () => {
           <div className="py-4 px-[17px] bg-lime-400">
             <div className="mb-2 flex justify-between items-center">
               <h3 className="font-semibold text-sm text-[var(--color---7)]">
-                Brand
+                Brands
               </h3>
               <FaAngleDown className="text-[var(--color---7)]" />
             </div>
-            <div className="py-2 px-[45px] rounded-3xl bg-[var(--color---3)]">
-              <h3 className="font-semibold text-sm text-center leading-none text-[#fff] cursor-pointer">Apply Filters (2)</h3>
-            </div>
+            <Link
+              href="#"
+              className="mt-3 flex justify-center items-center rounded-3xl py-2 px-[59px] border-2 border-[var(--color---5)] font-semibold text-sm text-center text-[var(--color---5)]"
+            >
+              Clear Filter
+            </Link>
           </div>
           {/* Brand Section */}
 

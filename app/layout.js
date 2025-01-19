@@ -4,7 +4,7 @@ import Footer from "./component/layers/Footer";
 import StoreProvider from "@/app/StoreProvider";
 import { Poppins } from 'next/font/google'
 
-const popins = Poppins({
+const popinss = Poppins({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
 })
@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${popins.className} overflow-x-hidden`}>
+      <body className={`${popinss.className} overflow-x-hidden`}>
         <StoreProvider>
             <Navbar />
               {children}

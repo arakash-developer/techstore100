@@ -1,8 +1,8 @@
 import "./globals.css";
-import { Poppins } from 'next/font/google'
 import Navbar from '@/app/component/layers/Navbar'
 import Footer from "./component/layers/Footer";
 import StoreProvider from "@/app/StoreProvider";
+import { Poppins } from 'next/font/google'
 
 const popins = Poppins({
   subsets: ['latin'],

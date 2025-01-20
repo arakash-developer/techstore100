@@ -8,8 +8,12 @@ import { CgMenuGridR } from "react-icons/cg";
 import { FaAngleDown, FaAngleLeft, FaAngleUp } from "react-icons/fa";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Item from "../component/layers/Item";
+import getFilterProduct from "../lib/getFilterProduct";
 
-const page = () => {
+const page = async() => {
+  let response = await getFilterProduct("laptop","all");
+  let allproducts = response.data;
+  
   const array = Array.from({ length: 20 }, (_, i) => i + 1);
 // console.log(array); // [1, 2, 3, ..., 20]
 
@@ -267,14 +271,14 @@ const page = () => {
         <div className="w-full h-full bg-lime-300
         grid justify-between grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
           {
-            array.map((item,index)=>(
-              <div className="bg-orange-600">
+            allproducts.map((item,index)=>(
+              <div className="">
               <Item
-                  key={index}
-                  className='w-full 2xl:w-[226px] bg-lime-300'
-                  id={"67668b3fd7ca9d583d582956"}
-                  title={"item.title"}
-                  image={Akash}
+                  key={item._id}
+                  className='w-full 2xl:w-[226px]'
+                  id={item._id}
+                  title={item.title}
+                  image={item.thumbnail}
                   />
                   </div>
             ))

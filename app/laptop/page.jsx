@@ -1,13 +1,18 @@
 import Container from "@/app/component/layers/Container";
 import Bannar4 from "@/public/banner/banner4.png";
+import Akash from "@/public/akash.png";
 import Image from "next/image";
 import Link from "next/link";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { CgMenuGridR } from "react-icons/cg";
 import { FaAngleDown, FaAngleLeft, FaAngleUp } from "react-icons/fa";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Item from "../component/layers/Item";
 
 const page = () => {
+  const array = Array.from({ length: 20 }, (_, i) => i + 1);
+// console.log(array); // [1, 2, 3, ..., 20]
+
   return (
     <Container>
       <div className="w-full h-[104px] overflow-hidden">
@@ -234,7 +239,9 @@ const page = () => {
               <FaAngleDown className="text-[var(--color---7)]" />
             </div>
             <div className="py-2 px-[45px] rounded-3xl bg-[var(--color---3)]">
-              <h3 className="font-semibold text-sm text-center leading-none text-[#fff] cursor-pointer">Apply Filters(2)</h3>
+              <h3 className="font-semibold text-sm text-center leading-none text-[#fff] cursor-pointer">
+                Apply Filters(2)
+              </h3>
             </div>
           </div>
           {/* Filter Name Section */}
@@ -255,10 +262,25 @@ const page = () => {
             </Link>
           </div>
           {/* Brand Section */}
-
-     
         </div>
-        <div className="right mt-1 bg-yellow-400 flex-1">ggg</div>
+        <div className="right mt-1 flex-1 h-full">
+        <div className="w-full h-full bg-lime-300
+        grid justify-between grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
+          {
+            array.map((item,index)=>(
+              <div className="bg-orange-600">
+              <Item
+                  key={index}
+                  className='w-full 2xl:w-[226px] bg-lime-300'
+                  id={"67668b3fd7ca9d583d582956"}
+                  title={"item.title"}
+                  image={Akash}
+                  />
+                  </div>
+            ))
+          }
+        </div>
+        </div>
       </div>
     </Container>
   );

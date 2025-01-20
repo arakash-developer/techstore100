@@ -278,6 +278,8 @@ const page = async() => {
                   className='w-full 2xl:w-[226px]'
                   id={item._id}
                   title={item.title}
+                  price={item.price}
+                  discountPercentage={item.discountPercentage}
                   image={item.thumbnail}
                   />
                   </div>
